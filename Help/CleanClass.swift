@@ -17,14 +17,17 @@ final class CleanViewController: UIViewController {
     @IBOutlet private weak var searchBar: UISearchBar!
     @IBOutlet private weak var tableView: UITableView!
     
+ 
     // MARK: - Public Properties
     var userID: String?
     weak var delegate: SomeDelegate?
     
+ 
     // MARK: - Private Properties
     private let userService = UserService()
     private var userList: [User]?
     
+ 
     // MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,12 +35,14 @@ final class CleanViewController: UIViewController {
         setupNavigationBar()
     }
     
+ 
     // MARK: - Private Methods
     private func setupNavigationBar() {
         navigationController?.navigationBar.backgroundColor = .red
         navigationItem.title = "Some"
     }
     
+ 
     // MARK: - IBActions
     @IBAction private func cancelButtonPressed(_ sender: UIBarButtonItem) {
         dismiss(animated: true, completion: nil)
