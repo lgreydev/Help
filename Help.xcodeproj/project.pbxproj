@@ -21,6 +21,7 @@
 		5E83857B2667814000ACA770 /* LogicallyRelatedElements.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E83857A2667814000ACA770 /* LogicallyRelatedElements.swift */; };
 		5E83857E2667B2A400ACA770 /* DeadCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E83857D2667B2A400ACA770 /* DeadCode.swift */; };
 		5E8385802667B63900ACA770 /* MARK.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E83857F2667B63900ACA770 /* MARK.swift */; };
+		5E8385832667B92900ACA770 /* CustomStringConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E8385822667B92900ACA770 /* CustomStringConvertible.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		5E83857A2667814000ACA770 /* LogicallyRelatedElements.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogicallyRelatedElements.swift; sourceTree = "<group>"; };
 		5E83857D2667B2A400ACA770 /* DeadCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeadCode.swift; sourceTree = "<group>"; };
 		5E83857F2667B63900ACA770 /* MARK.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MARK.swift; sourceTree = "<group>"; };
+		5E8385822667B92900ACA770 /* CustomStringConvertible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomStringConvertible.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 				5E8385582667635000ACA770 /* Main.storyboard */,
 				5E8385602667635400ACA770 /* Info.plist */,
 				5E83857726677A6100ACA770 /* CleanCode */,
+				5E8385812667B91000ACA770 /* Protocol */,
 			);
 			path = Help;
 			sourceTree = "<group>";
@@ -105,6 +108,14 @@
 				5E83857F2667B63900ACA770 /* MARK.swift */,
 			);
 			path = CleanCode;
+			sourceTree = "<group>";
+		};
+		5E8385812667B91000ACA770 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				5E8385822667B92900ACA770 /* CustomStringConvertible.swift */,
+			);
+			path = Protocol;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -186,6 +197,7 @@
 				5E8385572667635000ACA770 /* ViewController.swift in Sources */,
 				5E8385532667635000ACA770 /* AppDelegate.swift in Sources */,
 				5E83857926677C7600ACA770 /* Extension.swift in Sources */,
+				5E8385832667B92900ACA770 /* CustomStringConvertible.swift in Sources */,
 				5E838575266775E300ACA770 /* Lifecycle.swift in Sources */,
 				5E8385552667635000ACA770 /* SceneDelegate.swift in Sources */,
 			);
