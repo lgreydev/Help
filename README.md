@@ -3,7 +3,7 @@
 
 In this project, I have collected various best practices and iOS development tips. This is my personal development assistant.
 
-- [CLEANE CODE](#clean-code)
+- [**Cleane Code**](#clean-code)
     - [Clean Class](#cleanclass)
     - [Lifecycle](#lifecycle)
     - [Extension](#extension)
@@ -11,16 +11,16 @@ In this project, I have collected various best practices and iOS development tip
     - [Dead Code](#dead-code)
     - [Main MARKs](#main-marks)
     
-- [PROTOCOLS](#protocols)
+- [**Protocols**](#protocols)
     - [CustomStringConvertible](#customstringconvertible)
     
-- [Extensions](#extensions)
+- [**Extensions**](#extensions)
     - [Int + Random](#int-random)
 
 
 
 
-## CLEANE CODE
+## **Cleane Code**
 Raising code readability in iOS development. Thanks to the application of these tips, your code will become readable, which will further ensure convenience and speed of working with it.
 
 
@@ -273,7 +273,7 @@ The main MARKs for splitting the code into logically related blocks and their se
 ```
 
 
-## PROTOCOLS
+## **Protocols**
 
 
 ### [CustomStringConvertible](https://github.com/lgreydev/Help/blob/master/Help/Protocols/CustomStringConvertible.swift)
@@ -312,7 +312,7 @@ print(card) // 13 ♥️ nice print
 ```
 
 
-## EXTENSIONS
+## **Extensions**
 
 
 ### [Int Random](https://github.com/lgreydev/Help/blob/master/Help/Extensions/Int+Random.swift)
