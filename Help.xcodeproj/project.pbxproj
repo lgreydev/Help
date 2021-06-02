@@ -23,6 +23,7 @@
 		5E8385802667B63900ACA770 /* MARK.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E83857F2667B63900ACA770 /* MARK.swift */; };
 		5E8385832667B92900ACA770 /* CustomStringConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E8385822667B92900ACA770 /* CustomStringConvertible.swift */; };
 		5E8385862667BE7500ACA770 /* Int+Random.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E8385852667BE7500ACA770 /* Int+Random.swift */; };
+		5E83858B2667C5CB00ACA770 /* ErrorHandling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E83858A2667C5CB00ACA770 /* ErrorHandling.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +45,7 @@
 		5E83857F2667B63900ACA770 /* MARK.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MARK.swift; sourceTree = "<group>"; };
 		5E8385822667B92900ACA770 /* CustomStringConvertible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomStringConvertible.swift; sourceTree = "<group>"; };
 		5E8385852667BE7500ACA770 /* Int+Random.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+Random.swift"; sourceTree = "<group>"; };
+		5E83858A2667C5CB00ACA770 /* ErrorHandling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorHandling.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +87,7 @@
 				5E83857726677A6100ACA770 /* CleanCode */,
 				5E8385812667B91000ACA770 /* Protocols */,
 				5E8385842667BCAB00ACA770 /* Extensions */,
+				5E8385872667C57600ACA770 /* WorkingCode */,
 			);
 			path = Help;
 			sourceTree = "<group>";
@@ -127,6 +130,14 @@
 				5E8385852667BE7500ACA770 /* Int+Random.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		5E8385872667C57600ACA770 /* WorkingCode */ = {
+			isa = PBXGroup;
+			children = (
+				5E83858A2667C5CB00ACA770 /* ErrorHandling.swift */,
+			);
+			path = WorkingCode;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -210,6 +221,7 @@
 				5E8385532667635000ACA770 /* AppDelegate.swift in Sources */,
 				5E83857926677C7600ACA770 /* Extension.swift in Sources */,
 				5E8385832667B92900ACA770 /* CustomStringConvertible.swift in Sources */,
+				5E83858B2667C5CB00ACA770 /* ErrorHandling.swift in Sources */,
 				5E838575266775E300ACA770 /* Lifecycle.swift in Sources */,
 				5E8385552667635000ACA770 /* SceneDelegate.swift in Sources */,
 			);
