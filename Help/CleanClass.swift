@@ -7,7 +7,7 @@
 
 import Foundation
 
-/// Example of a pure class
+/// Example of a clean class
 /// Пример чистого класса
 
 /*
