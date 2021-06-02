@@ -10,9 +10,12 @@ In this project, I have collected various best practices and iOS development tip
     - [Logically Related Elements](#logically-related-elements)
     - [Dead Code](#dead-code)
     - [Main MARKs](#main-marks)
-    
-- [PROTOCOL](#protocol)
+- [PROTOCOLS](#protocols)
     - [CustomStringConvertible](#customstringconvertible)
+- [Extensions](#extensions)
+    - [Int + Random](#random-int)
+
+
 
 
 ## CLEANE CODE
@@ -268,11 +271,10 @@ The main MARKs for splitting the code into logically related blocks and their se
 ```
 
 
-## PROTOCOL
+## PROTOCOLS
 
 
-
-### [CustomStringConvertible](https://github.com/lgreydev/Help/blob/master/Help/Protocol/CustomStringConvertible.swift)
+### [CustomStringConvertible](https://github.com/lgreydev/Help/blob/master/Help/Protocols/CustomStringConvertible.swift)
 A type with a customized textual representation.
 Types that conform to the CustomStringConvertible protocol can provide their own representation to be used when converting an instance to a string. The String(describing:) initializer is the preferred way to convert an instance of any type to a string. If the passed instance conforms to CustomStringConvertible, the String(describing:) initializer and the print(_:) function use the instance’s custom description property. Accessing a type’s description property directly or using CustomStringConvertible as a generic constraint is discouraged.
 
@@ -304,5 +306,31 @@ struct Card: CustomStringConvertible {
 
 let card = Card(suit: .hearts, rank: .king)
 print(card) // 13 ♥️ nice print
+
+```
+
+
+## EXTENSIONS
+
+
+### [Int + Random](https://github.com/lgreydev/Help/blob/master/Help/Extensions/Int+Random.swift)
+An extension for Int that returns a random number works with range  of numbers. Negative numbers converts to positive.
+Example: 17.random will return 0 to 17 (not including 17).
+Example: -5.random, -5 convert to 5, will return 0 to 5 (not including 5).
+
+
+``` javascript
+
+extension Int {
+    var random: Int {
+        if self > 0 {
+            return Int.random(in: 0..<self)
+        } else if self < 0 {
+            return Int.random(in: 0..<abs(self))
+        } else {
+            return 0
+        }
+    }
+}
 
 ```

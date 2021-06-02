@@ -22,6 +22,7 @@
 		5E83857E2667B2A400ACA770 /* DeadCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E83857D2667B2A400ACA770 /* DeadCode.swift */; };
 		5E8385802667B63900ACA770 /* MARK.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E83857F2667B63900ACA770 /* MARK.swift */; };
 		5E8385832667B92900ACA770 /* CustomStringConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E8385822667B92900ACA770 /* CustomStringConvertible.swift */; };
+		5E8385862667BE7500ACA770 /* Int+Random.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E8385852667BE7500ACA770 /* Int+Random.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		5E83857D2667B2A400ACA770 /* DeadCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeadCode.swift; sourceTree = "<group>"; };
 		5E83857F2667B63900ACA770 /* MARK.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MARK.swift; sourceTree = "<group>"; };
 		5E8385822667B92900ACA770 /* CustomStringConvertible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomStringConvertible.swift; sourceTree = "<group>"; };
+		5E8385852667BE7500ACA770 /* Int+Random.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+Random.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,7 +83,8 @@
 				5E8385582667635000ACA770 /* Main.storyboard */,
 				5E8385602667635400ACA770 /* Info.plist */,
 				5E83857726677A6100ACA770 /* CleanCode */,
-				5E8385812667B91000ACA770 /* Protocol */,
+				5E8385812667B91000ACA770 /* Protocols */,
+				5E8385842667BCAB00ACA770 /* Extensions */,
 			);
 			path = Help;
 			sourceTree = "<group>";
@@ -110,12 +113,20 @@
 			path = CleanCode;
 			sourceTree = "<group>";
 		};
-		5E8385812667B91000ACA770 /* Protocol */ = {
+		5E8385812667B91000ACA770 /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
 				5E8385822667B92900ACA770 /* CustomStringConvertible.swift */,
 			);
-			path = Protocol;
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		5E8385842667BCAB00ACA770 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				5E8385852667BE7500ACA770 /* Int+Random.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -190,6 +201,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E8385862667BE7500ACA770 /* Int+Random.swift in Sources */,
 				5E83857B2667814000ACA770 /* LogicallyRelatedElements.swift in Sources */,
 				5E83856B2667652700ACA770 /* CleanClass.swift in Sources */,
 				5E83857E2667B2A400ACA770 /* DeadCode.swift in Sources */,
