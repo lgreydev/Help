@@ -7,6 +7,7 @@ In this project, I have collected various best practices and iOS development tip
     - [Clean Class](#cleanclass)
     - [Main MARKs](#main-marks)
     - [Lifecycle](#lifecycle)
+    - [Extension](#extension)
 
 
 ## Clean Code
@@ -125,4 +126,43 @@ We move the logic out of the lifecycle methods into separate methods. The logic 
         print("Some")
     }
 
+```
+
+
+### [Extension](https://github.com/lgreydev/Help/blob/master/Help/CleanCode/Extension.swift)
+Using an extension to implement protocols. Move protocols implementation into extensions with mark // MARK: — SomeProtocol
+
+``` javascript
+❌ NOT Preferred
+
+final class CleanViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+    
+    // all methods
+}
+
+
+✅ Preferred
+
+final class CleanViewController: UIViewController {
+
+  // class stuff here
+  
+}
+
+
+// MARK: - Table View Data Source
+extension CleanViewController: UITableViewDataSource {
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        
+        return userList?.count ?? 0
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        let cell = UITableViewCell()
+        return cell
+    }
+    
+}
 ```
