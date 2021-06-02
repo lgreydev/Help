@@ -13,7 +13,7 @@ In this project, I have collected various best practices and iOS development tip
 - [PROTOCOLS](#protocols)
     - [CustomStringConvertible](#customstringconvertible)
 - [Extensions](#extensions)
-    - [Int + Random](#random-int)
+    - [Int + Random](#random-+-int)
 
 
 
