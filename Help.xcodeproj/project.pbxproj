@@ -70,8 +70,7 @@
 				5E8385562667635000ACA770 /* ViewController.swift */,
 				5E8385582667635000ACA770 /* Main.storyboard */,
 				5E8385602667635400ACA770 /* Info.plist */,
-				5E83856A2667652700ACA770 /* CleanClass.swift */,
-				5E838574266775E300ACA770 /* Lifecycle.swift */,
+				5E83857726677A6100ACA770 /* CleanCode */,
 			);
 			path = Help;
 			sourceTree = "<group>";
@@ -85,6 +84,15 @@
 				5E83855D2667635400ACA770 /* LaunchScreen.storyboard */,
 			);
 			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		5E83857726677A6100ACA770 /* CleanCode */ = {
+			isa = PBXGroup;
+			children = (
+				5E83856A2667652700ACA770 /* CleanClass.swift */,
+				5E838574266775E300ACA770 /* Lifecycle.swift */,
+			);
+			path = CleanCode;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
