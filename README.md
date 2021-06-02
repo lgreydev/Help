@@ -10,10 +10,12 @@ In this project, I have collected various best practices and iOS development tip
     - [Logically Related Elements](#logically-related-elements)
     - [Dead Code](#dead-code)
     - [Main MARKs](#main-marks)
+    
 - [PROTOCOLS](#protocols)
     - [CustomStringConvertible](#customstringconvertible)
+    
 - [Extensions](#extensions)
-    - [Int + Random](#random-+-int)
+    - [Int + Random](#int-+-Random)
 
 
 
