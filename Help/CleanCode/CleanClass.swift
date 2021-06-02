@@ -52,19 +52,7 @@ final class CleanViewController: UIViewController {
 */
 
 
-/// The main MARKs for splitting the code into logically related blocks and their sequence
-// MARK: - IBOutlets
 
-// MARK: - Public Properties
 
-// MARK: - Private Properties
 
-// MARK: - Initializers
 
-// MARK: - Lifecycle
-
-// MARK: - Public Methods
-
-// MARK: - Private Methods
-
-// MARK: - IBActions

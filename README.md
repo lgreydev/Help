@@ -5,11 +5,11 @@ In this project, I have collected various best practices and iOS development tip
 
 - [CLEANE CODE](#clean-code)
     - [Clean Class](#cleanclass)
-    - [Main MARKs](#main-marks)
     - [Lifecycle](#lifecycle)
     - [Extension](#extension)
     - [Logically Related Elements](#logically-related-elements)
     - [Dead Code](#dead-code)
+    - [Main MARKs](#main-marks)
 
 
 ## CLEANE CODE
@@ -58,29 +58,6 @@ final class CleanViewController: UIViewController {
     }
     
 }
-```
-
-
-### [Main MARKs](https://github.com/lgreydev/Help/blob/master/Help/CleanCode/CleanClass.swift)
-The main MARKs for splitting the code into logically related blocks and their sequence.
-
-```javascript
-// MARK: - IBOutlets
-
-// MARK: - Public Properties
-
-// MARK: - Private Properties
-
-// MARK: - Initializers
-
-// MARK: - Lifecycle
-
-// MARK: - Public Methods
-
-// MARK: - Private Methods
-
-// MARK: - IBActions
-
 ```
 
 
@@ -260,5 +237,28 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
 }
+
+```
+
+
+### [Main MARKs](https://github.com/lgreydev/Help/blob/master/Help/CleanCode/MARK.swift)
+The main MARKs for splitting the code into logically related blocks and their sequence.
+
+```javascript
+// MARK: - IBOutlets
+
+// MARK: - Public Properties
+
+// MARK: - Private Properties
+
+// MARK: - Initializers
+
+// MARK: - Lifecycle
+
+// MARK: - Public Methods
+
+// MARK: - Private Methods
+
+// MARK: - IBActions
 
 ```
