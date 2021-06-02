@@ -19,6 +19,8 @@ In this project, I have collected various best practices and iOS development tip
 
 - [**Working Code**](#working-code)
     - [Error Handling](#error-handling)
+    - [Type Casting](#type-casting)
+
 
 
 
@@ -417,3 +419,45 @@ safari.getImage(text: "page 3")
 
 ```
 
+
+
+
+### [Type Casting](https://github.com/lgreydev/Help/blob/master/Help/WorkCode/TypeCasting.swift)
+Type casting is a way to check the type of an instance, or to treat that instance as a different superclass or subclass from somewhere else in its own class hierarchy.
+
+Type casting in Swift is implemented with the is and as operators. These two operators provide a simple and expressive way to check the type of a value or cast a value to a different type.
+
+``` javascript
+
+/// Type Casting
+let unknown: Any = "Steve"
+
+if let name = unknown as? String {
+    print(name)
+} else {
+    print("'unknown' is not type String")
+}
+
+/// Checking Type
+unknown is Int ? print(unknown) : print("'unknown' is not type Int")
+
+/// Downcasting
+/// The variable `tom` of the type `Superclass` assigns an instance of `Subclass`. 
+/// If we want to access the properties of the subclass `Subclass` then we need to do Downcasting.
+/// We cannot directly access the property of the `Subclass`, since the variable `tom` has the type `Superclass`.
+class Superclass {
+    var name: String = "Tom"
+}
+
+class Subclass: Superclass {
+    var age: Int = 15
+}
+
+let tom: Superclass = Subclass() // The variable type of 'Superclass' assigns an instance of 'Subclass'
+
+tom.age // error
+if let value = tom as? Subclass {
+    print(value.age)
+}
+
+```
