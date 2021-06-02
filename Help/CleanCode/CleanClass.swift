@@ -7,7 +7,7 @@
 
 import Foundation
 
-/// Example of a clean class
+// MARK: Clean Class
 /// The code has a clear structure, due to which the logic is more obvious, the code is easy to read, you can quickly find what you are looking for, and besides, it is just pleasant to look at it.
 
 /*

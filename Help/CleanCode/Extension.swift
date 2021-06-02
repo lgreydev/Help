@@ -7,9 +7,8 @@
 
 import Foundation
 
-
+// MARK: Extension
 /// Using an extension to implement protocols. Move protocols implementation into extensions with mark // MARK: — SomeProtocol
-
 
 /*
 ❌ NOT Preferred
