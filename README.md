@@ -1,5 +1,5 @@
 
-# My Help 
+# MY HELP
 
 In this project, I have collected various best practices and iOS development tips. This is my personal development assistant.
 
@@ -11,7 +11,7 @@ In this project, I have collected various best practices and iOS development tip
     - [Logically Related Elements](#logically-related-elements)
 
 
-## Clean Code
+## CLEANE CODE
 Raising code readability in iOS development. Thanks to the application of these tips, your code will become readable, which will further ensure convenience and speed of working with it.
 
 
