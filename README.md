@@ -15,7 +15,7 @@ In this project, I have collected various best practices and iOS development tip
     - [CustomStringConvertible](#customstringconvertible)
     
 - [Extensions](#extensions)
-    - [Int + Random](#int-+-Random)
+    - [Int + Random](#int-random)
 
 
 
@@ -315,7 +315,7 @@ print(card) // 13 ♥️ nice print
 ## EXTENSIONS
 
 
-### [Int + Random](https://github.com/lgreydev/Help/blob/master/Help/Extensions/Int+Random.swift)
+### [Int Random](https://github.com/lgreydev/Help/blob/master/Help/Extensions/Int+Random.swift)
 An extension for Int that returns a random number works with range  of numbers. Negative numbers converts to positive.
 Example: 17.random will return 0 to 17 (not including 17).
 Example: -5.random, -5 convert to 5, will return 0 to 5 (not including 5).
