@@ -343,12 +343,12 @@ extension Int {
 
 
 ### [Error Handling](https://github.com/lgreydev/Help/blob/master/Help/WorkCode/ErrorHandling.swift)
-- Error handler, using the 'throws' keyword we indicate that the function can receive an error.
-- Using the 'throw' key we throw an error into the 'NSError' instance.
-- do catch - this error handler helps to catch the error.
-- In this example, we are trying to call the function that we marked with the keyword 'throws'.
-- Before calling the function, put the 'try' keyword.
-- If the function gets an error, we catch it 'catch'.
+- Error handler, using the `throws` keyword we indicate that the function can receive an error.
+- Using the `throw` key we throw an error into the `NSError` instance.
+- `do catch` - this error handler helps to catch the error.
+- In this example, we are trying to call the function that we marked with the keyword `throws`.
+- Before calling the function, put the `try` keyword.
+- If the function gets an error, we catch it `catch`.
 
 ``` javascript
 
