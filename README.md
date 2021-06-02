@@ -344,7 +344,7 @@ extension Int {
 ## **Working Code**
 
 
-### [Error Handling](https://github.com/lgreydev/Help/blob/master/Help/WorkCode/ErrorHandling.swift)
+### [Error Handling](https://github.com/lgreydev/Help/blob/master/Help/WorkingCode/ErrorHandling.swift)
 - Error handler, using the `throws` keyword we indicate that the function can receive an error.
 - Using the `throw` key we throw an error into the `NSError` instance.
 - `do catch` - this error handler helps to catch the error.
@@ -422,7 +422,7 @@ safari.getImage(text: "page 3")
 
 
 
-### [Type Casting](https://github.com/lgreydev/Help/blob/master/Help/WorkCode/TypeCasting.swift)
+### [Type Casting](https://github.com/lgreydev/Help/blob/master/Help/WorkingCode/TypeCasting.swift)
 Type casting is a way to check the type of an instance, or to treat that instance as a different superclass or subclass from somewhere else in its own class hierarchy.
 
 Type casting in Swift is implemented with the is and as operators. These two operators provide a simple and expressive way to check the type of a value or cast a value to a different type.
