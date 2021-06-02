@@ -18,7 +18,7 @@ In this project, I have collected various best practices and iOS development tip
     - [Int + Random](#int-random)
 
 - [**Working Code**](#working-code)
-    -[Error Handling](#error-handling)
+    - [Error Handling](#error-handling)
 
 
 
