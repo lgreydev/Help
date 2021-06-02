@@ -1,5 +1,5 @@
 //
-//  PureClass.swift
+//  CleanClass.swift
 //  Help
 //
 //  Created by Sergey Lukaschuk on 02.06.2021.
