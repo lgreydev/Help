@@ -5,54 +5,11 @@
 
 In this project, I have collected various best practices and iOS development tips. This is my personal development assistant.
 
-- [CleanClass](#CleanClass)
-
-text text text text text text 
-text text text text text text 
-text text text text text text 
-text text text text text text 
-text text text text text text 
-text text text text text text 
-text text text text text text 
-text text text text text text 
-text text text text text text 
-
-text text text text text text 
-text text text text text text 
-text text text text text text 
-text text text text text text 
-text text text text text text 
-text text text text text text 
-text text text text text text 
-text text text text text text 
-text text text text text text 
-
-text text text text text text 
-text text text text text text 
-text text text text text text 
-text text text text text text 
-text text text text text text 
-text text text text text text 
-text text text text text text 
-text text text text text text 
-text text text text text text 
-
-text text text text text text 
-text text text text text text 
-text text text text text text 
-text text text text text text 
-text text text text text text 
-text text text text text text 
-text text text text text text 
-text text text text text text 
-text text text text text text 
-
-
-
-
-
+- [CleanClass](#cleanclass)
+- [Main MARKs](#main-marks)
 
 #### [CleanClass](https://github.com/lgreydev/Help/blob/master/Help/CleanClass.swift)
+The code has a clear structure, due to which the logic is more obvious, the code is easy to read, you can quickly find what you are looking for, and besides, it is just pleasant to look at it.
 
 ```
 final class CleanViewController: UIViewController {
@@ -94,4 +51,27 @@ final class CleanViewController: UIViewController {
     }
     
 }
+```
+
+
+#### [Main MARKs](https://github.com/lgreydev/Help/blob/master/Help/CleanClass.swift)
+The main MARKs for splitting the code into logically related blocks and their sequence
+
+```
+// MARK: - IBOutlets
+
+// MARK: - Public Properties
+
+// MARK: - Private Properties
+
+// MARK: - Initializers
+
+// MARK: - Lifecycle
+
+// MARK: - Public Methods
+
+// MARK: - Private Methods
+
+// MARK: - IBActions
+
 ```
