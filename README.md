@@ -20,7 +20,7 @@ In this project, I have collected various best practices and iOS development tip
 - [**Working Code**](#working-code)
     - [Error Handling](#error-handling)
     - [Type Casting](#type-casting)
-    - [Failable Initializers](#failable-lnitializers)
+    - [Failable Initializers](#failable-initializers)
 
 
 
