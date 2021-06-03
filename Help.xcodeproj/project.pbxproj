@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5E66D43626694663001CB8F0 /* FailableInitializers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E66D43526694663001CB8F0 /* FailableInitializers.swift */; };
 		5E8385532667635000ACA770 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E8385522667635000ACA770 /* AppDelegate.swift */; };
 		5E8385552667635000ACA770 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E8385542667635000ACA770 /* SceneDelegate.swift */; };
 		5E8385572667635000ACA770 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E8385562667635000ACA770 /* ViewController.swift */; };
@@ -28,6 +29,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5E66D43526694663001CB8F0 /* FailableInitializers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FailableInitializers.swift; sourceTree = "<group>"; };
 		5E83854F2667635000ACA770 /* Help.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Help.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E8385522667635000ACA770 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5E8385542667635000ACA770 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -139,6 +141,7 @@
 			children = (
 				5E83858A2667C5CB00ACA770 /* ErrorHandling.swift */,
 				5E83858C2667D3C400ACA770 /* TypeCasting.swift */,
+				5E66D43526694663001CB8F0 /* FailableInitializers.swift */,
 			);
 			path = WorkingCode;
 			sourceTree = "<group>";
@@ -221,6 +224,7 @@
 				5E83857E2667B2A400ACA770 /* DeadCode.swift in Sources */,
 				5E8385802667B63900ACA770 /* MARK.swift in Sources */,
 				5E8385572667635000ACA770 /* ViewController.swift in Sources */,
+				5E66D43626694663001CB8F0 /* FailableInitializers.swift in Sources */,
 				5E8385532667635000ACA770 /* AppDelegate.swift in Sources */,
 				5E83857926677C7600ACA770 /* Extension.swift in Sources */,
 				5E83858D2667D3C400ACA770 /* TypeCasting.swift in Sources */,
