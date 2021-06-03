@@ -40,8 +40,3 @@ let card = Card(suit: .hearts, rank: .king)
 //print(card) // 13 ♥️ nice print
 
 
-
-
-
-
-

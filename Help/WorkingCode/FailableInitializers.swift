@@ -26,5 +26,3 @@ let cat = Animal(species: "") // nil
 let dog = Animal(species: "Mammal") // Animal
 
 
-
-

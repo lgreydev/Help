@@ -84,13 +84,3 @@ safari.getImage(text: "page 3")
 */
 
 
-
-
-
-
-
-
-
-
-
-
