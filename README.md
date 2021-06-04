@@ -31,7 +31,8 @@ Raising code readability in iOS development. Thanks to the application of these 
 ### [Clean Class](https://github.com/lgreydev/Help/blob/master/Help/CleanCode/CleanClass.swift)
 The code has a clear structure, due to which the logic is more obvious, the code is easy to read, you can quickly find what you are looking for, and besides, it is just pleasant to look at it.
 
-```javascript
+```swift
+
 final class CleanViewController: UIViewController {
     
     // MARK: - IBOutlets
@@ -70,13 +71,15 @@ final class CleanViewController: UIViewController {
     }
     
 }
+
 ```
 
 
 ### [Lifecycle](https://github.com/lgreydev/Help/blob/master/Help/CleanCode/Lifecycle.swift)
 We move the logic out of the lifecycle methods into separate methods. The logic inside the methods of the ViewController lifecycle should be moved into separate methods, even if you have to create a method with one line of code. Today one, and tomorrow ten.
 
-``` javascript
+```swift
+
 ❌ NOT Preferred
 
     override func viewDidLoad() {
@@ -123,7 +126,8 @@ We move the logic out of the lifecycle methods into separate methods. The logic 
 ### [Extension](https://github.com/lgreydev/Help/blob/master/Help/CleanCode/Extension.swift)
 Using an extension to implement protocols. Move protocols implementation into extensions with mark // MARK: — SomeProtocol
 
-``` javascript
+```swift
+
 ❌ NOT Preferred
 
 final class CleanViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
@@ -156,13 +160,14 @@ extension CleanViewController: UITableViewDataSource {
     }
     
 }
+
 ```
 
 
 ### [Logically Related Elements](https://github.com/lgreydev/Help/blob/master/Help/CleanCode/LogicallyRelatedElements.swift)
 To improve clarity, you need to highlight logically related elements using an empty string.
 
-``` javascript
+```swift
 
 ❌ NOT Preferred
 
@@ -206,7 +211,7 @@ To improve clarity, you need to highlight logically related elements using an em
 ### [Dead Code](https://github.com/lgreydev/Help/blob/master/Help/CleanCode/DeadCode.swift)
 Do not leave unnecessary comments (default), empty methods or dead functionality - it makes code dirty. Attention to the AppDelegate class, most likely you will find empty methods there with comments inside.
 
-``` javascript
+```swift
 
 ❌ NOT Preferred
 
@@ -256,7 +261,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 ### [Main MARKs](https://github.com/lgreydev/Help/blob/master/Help/CleanCode/MARK.swift)
 The main MARKs for splitting the code into logically related blocks and their sequence.
 
-```javascript
+```swift
 
 // MARK: - IBOutlets
 
@@ -284,7 +289,7 @@ The main MARKs for splitting the code into logically related blocks and their se
 A type with a customized textual representation.
 Types that conform to the CustomStringConvertible protocol can provide their own representation to be used when converting an instance to a string. The String(describing:) initializer is the preferred way to convert an instance of any type to a string. If the passed instance conforms to CustomStringConvertible, the String(describing:) initializer and the print(_:) function use the instance’s custom description property. Accessing a type’s description property directly or using CustomStringConvertible as a generic constraint is discouraged.
 
-``` javascript
+```swift
 
 struct Card: CustomStringConvertible {
 
@@ -325,7 +330,7 @@ An extension for Int that returns a random number works with range  of numbers. 
 - **Example:** -5.random, -5 convert to 5, will return 0 to 5 (not including 5).
 
 
-``` javascript
+```swift
 
 extension Int {
     var random: Int {
@@ -352,7 +357,7 @@ extension Int {
 - Before calling the function, put the `try` keyword.
 - If the function gets an error, we catch it `catch`.
 
-``` javascript
+```swift
 
 func divide(_ a: Int, by b: Int) throws -> Double {
     guard b != 0 else { throw NSError(domain: "The number 'b' must not be zero", code: 100) }
@@ -427,7 +432,7 @@ Type casting is a way to check the type of an instance, or to treat that instanc
 
 Type casting in Swift is implemented with the is and as operators. These two operators provide a simple and expressive way to check the type of a value or cast a value to a different type.
 
-``` javascript
+```swift
 
 /// Type Casting
 let unknown: Any = "Steve"
@@ -469,7 +474,7 @@ It’s sometimes useful to define a class, structure, or enumeration for which i
 To cope with initialization conditions that can fail, define one or more failable initializers as part of a class, structure, or enumeration definition. You write a failable initializer by placing a question mark after the init keyword (init?).
 
 
-``` javascript
+```swift
 
 struct Animal {
     let species: String
@@ -502,7 +507,7 @@ The else clause of a guard statement is required, and must either call a functio
 `throw`
 
 
-``` javascript
+```swift
 
 /// Example 1
 struct MyFood {
