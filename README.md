@@ -520,7 +520,6 @@ let breakfast = MyFood(name: "banana", calories: 50) // return object
 let dinner = MyFood(name: "", calories: 10) // return object
 let lunch = MyFood(name: "water", calories: 0) // return object
 
-
 /// Example 2
 func printMyFood(eating: MyFood?) {
     guard let name = eating?.name, let calories = eating?.calories else { fatalError() }
