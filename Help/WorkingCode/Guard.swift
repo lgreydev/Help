@@ -26,8 +26,6 @@ guard condition else {
 /// continue
 /// throw
 
-/// Control transfer statements are discussed in Control Transfer Statements below. For more information on functions with the Never return type, see Functions that Never Return.
-
 /// Example 1
 struct MyFood {
     var name: String

@@ -501,8 +501,6 @@ The else clause of a guard statement is required, and must either call a functio
 `continue`
 `throw`
 
-Control transfer statements are discussed in Control Transfer Statements below. For more information on functions with the Never return type, see Functions that Never Return.
-
 
 ``` javascript
 
