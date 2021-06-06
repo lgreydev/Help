@@ -4,7 +4,7 @@
 In this project, I have collected various best practices and iOS development tips. This is my personal development assistant.
 
 - [**Cleane Code**](#clean-code)
-    - [Clean Class](#cleanclass)
+    - [Clean Class](#cleane-code)
     - [Lifecycle](#lifecycle)
     - [Extension](#extension)
     - [Logically Related Elements](#logically-related-elements)
