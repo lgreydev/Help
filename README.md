@@ -3,8 +3,8 @@
 
 In this project, I have collected various best practices and iOS development tips. This is my personal development assistant.
 
-- [**Cleane Code**](#clean-code)
-    - [Clean Class](#cleane-code)
+- [**Clean Code**](#clean-code)
+    - [Clean Class](#clean-class)
     - [Lifecycle](#lifecycle)
     - [Extension](#extension)
     - [Logically Related Elements](#logically-related-elements)
@@ -24,7 +24,7 @@ In this project, I have collected various best practices and iOS development tip
     - [Guard](#guard)
 
 
-## **Cleane Code**
+## **Clean Code**
 Raising code readability in iOS development. Thanks to the application of these tips, your code will become readable, which will further ensure convenience and speed of working with it.
 
 
