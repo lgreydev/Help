@@ -26,6 +26,8 @@ In this project, I have collected various best practices and iOS development tip
 
 - [**UIKit**](#uikit)
     - [Unwind Segue](#unwind-segue)
+    - [Prepare Segue](#prepare-segue)
+
 
 ## **Clean Code**
 Raising code readability in iOS development. Thanks to the application of these tips, your code will become readable, which will further ensure convenience and speed of working with it.
@@ -560,3 +562,41 @@ UIKit determines the target of an unwind segue at runtime, so you aren’t restr
 
 ```
 <img src="https://github.com/lgreydev/Help/blob/master/Screenshots/segue-002.png" width="350"><img src="https://github.com/lgreydev/Help/blob/master/Screenshots/segue-001.png" width="350">
+
+
+
+
+
+### [Prepare Segue](https://github.com/lgreydev/Help/blob/master/Help/UIKit/PrepareSegue.swift)
+[Documentation](https://developer.apple.com/documentation/uikit/uiviewcontroller/1621490-prepare)
+
+`prepare(for:sender:)`
+Notifies the view controller that a segue is about to be performed.
+
+The default implementation of this method does nothing. Subclasses override this method and use it to configure the new view controller prior to it being displayed. The segue object contains information about the transition, including references to both view controllers that are involved.
+
+Because segues can be triggered from multiple sources, you can use the information in the segue and sender parameters to disambiguate between different logical paths in your app. For example, if the segue originated from a table view, the sender parameter would identify the table view cell that the user tapped. You could then use that information to set the data on the destination view controller.
+
+
+```swift
+
+func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+    
+    //    Parameters
+    //    segue
+    //    The segue object containing information about the view controllers involved in the segue.
+        
+    //    sender
+    //    The object that initiated the segue. You might use this parameter to perform different actions based on which control (or other object) initiated the segue.
+    
+    // Accessing the Segue Attributes
+        // var source: UIViewController 
+            The source view controller for the segue.
+        // var destination: UIViewController
+            The destination view controller for the segue.
+        // var identifier: String?
+            The identifier for the segue object.
+    
+}
+
+```
