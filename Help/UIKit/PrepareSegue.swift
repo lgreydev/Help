@@ -14,21 +14,7 @@ import Foundation
 
 /*
  func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-     
-     //    Parameters
-     //    segue
-     //    The segue object containing information about the view controllers involved in the segue.
-         
-     //    sender
-     //    The object that initiated the segue. You might use this parameter to perform different actions based on which control (or other object) initiated the segue.
-     
-     // Accessing the Segue Attributes
-         // var source: UIViewController
-             The source view controller for the segue.
-         // var destination: UIViewController
-             The destination view controller for the segue.
-         // var identifier: String?
-             The identifier for the segue object.
-     
+     guard segue.identifier == "Yellow" else { fatalError() }
+     segue.destination.navigationItem.title = textField.text
  }
 */
