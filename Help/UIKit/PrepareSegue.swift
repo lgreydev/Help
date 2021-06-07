@@ -14,7 +14,7 @@ import Foundation
 
 /*
  func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-     guard segue.identifier == "Yellow" else { fatalError() }
-     segue.destination.navigationItem.title = textField.text
+     guard segue.identifier == "identifier segue" else { fatalError() }
+     segue.destination = textField.text
  }
 */
