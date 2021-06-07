@@ -623,6 +623,7 @@ This method throws an Exception handling if there is no segue with the specified
 `sender` The object that you want to use to initiate the segue. This object is made available for informational purposes during the actual segue.
 
 **Discussion**
+
 Normally, segues are initiated automatically and not using this method. However, you can use this method in cases where the segue could not be configured in your storyboard file. For example, you might call it from a custom action handler used in response to shake or accelerometer events.
 
 The current view controller must have been loaded from a storyboard. If its storyboard property is nil, perhaps because you allocated and initialized the view controller yourself, this method throws an exception.
