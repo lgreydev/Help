@@ -27,6 +27,7 @@ In this project, I have collected various best practices and iOS development tip
 - [**UIKit**](#uikit)
     - [Unwind Segue](#unwind-segue)
     - [Prepare Segue](#prepare-segue)
+    - [Perform Segue](#perform-segue)
 
 
 ## **Clean Code**
@@ -601,3 +602,34 @@ func prepare(for segue: UIStoryboardSegue, sender: Any?) {
 
 `var identifier: String?`  The identifier for the segue object.
         
+
+
+
+
+
+
+
+### [Perform Segue](https://github.com/lgreydev/Help/blob/master/Help/UIKit/PerformSegue.swift)
+[Documentation](https://developer.apple.com/documentation/uikit/uiviewcontroller/1621413-performsegue)
+
+Initiates the segue with the specified identifier from the current view controller's storyboard file.
+
+```swift
+
+func performSegue(withIdentifier identifier: String, sender: Any?)
+
+```
+
+#### Parameters
+
+**identifier**
+The string that identifies the triggered segue. In Interface Builder, you specify the segue’s identifier string in the attributes inspector.
+This method throws an Exception handling if there is no segue with the specified identifier.
+
+**sender**
+The object that you want to use to initiate the segue. This object is made available for informational purposes during the actual segue.
+
+#### Discussion
+Normally, segues are initiated automatically and not using this method. However, you can use this method in cases where the segue could not be configured in your storyboard file. For example, you might call it from a custom action handler used in response to shake or accelerometer events.
+
+The current view controller must have been loaded from a storyboard. If its storyboard property is nil, perhaps because you allocated and initialized the view controller yourself, this method throws an exception.
