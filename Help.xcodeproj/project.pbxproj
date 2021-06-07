@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		5E2CF7C1266E20AE007BB2EB /* UnwindSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E2CF7C0266E20AE007BB2EB /* UnwindSegue.swift */; };
+		5E2CF7C5266E242E007BB2EB /* segue-002.png in Resources */ = {isa = PBXBuildFile; fileRef = 5E2CF7C3266E242E007BB2EB /* segue-002.png */; };
+		5E2CF7C6266E242E007BB2EB /* segue-001.png in Resources */ = {isa = PBXBuildFile; fileRef = 5E2CF7C4266E242E007BB2EB /* segue-001.png */; };
 		5E66D43626694663001CB8F0 /* FailableInitializers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E66D43526694663001CB8F0 /* FailableInitializers.swift */; };
 		5E72DD5E266A76EE00A8E543 /* Guard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E72DD5D266A76EE00A8E543 /* Guard.swift */; };
 		5E8385532667635000ACA770 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E8385522667635000ACA770 /* AppDelegate.swift */; };
@@ -32,6 +34,8 @@
 
 /* Begin PBXFileReference section */
 		5E2CF7C0266E20AE007BB2EB /* UnwindSegue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnwindSegue.swift; sourceTree = "<group>"; };
+		5E2CF7C3266E242E007BB2EB /* segue-002.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "segue-002.png"; sourceTree = "<group>"; };
+		5E2CF7C4266E242E007BB2EB /* segue-001.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "segue-001.png"; sourceTree = "<group>"; };
 		5E66D43526694663001CB8F0 /* FailableInitializers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FailableInitializers.swift; sourceTree = "<group>"; };
 		5E72DD5D266A76EE00A8E543 /* Guard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Guard.swift; sourceTree = "<group>"; };
 		5E83854F2667635000ACA770 /* Help.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Help.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -75,9 +79,19 @@
 			path = UIKit;
 			sourceTree = "<group>";
 		};
+		5E2CF7C2266E23D7007BB2EB /* Screenshots */ = {
+			isa = PBXGroup;
+			children = (
+				5E2CF7C4266E242E007BB2EB /* segue-001.png */,
+				5E2CF7C3266E242E007BB2EB /* segue-002.png */,
+			);
+			path = Screenshots;
+			sourceTree = "<group>";
+		};
 		5E8385462667634F00ACA770 = {
 			isa = PBXGroup;
 			children = (
+				5E2CF7C2266E23D7007BB2EB /* Screenshots */,
 				5E8385702667681600ACA770 /* README.md */,
 				5E83856E266767D600ACA770 /* .gitignore */,
 				5E8385512667635000ACA770 /* Help */,
@@ -217,11 +231,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E2CF7C5266E242E007BB2EB /* segue-002.png in Resources */,
 				5E83856F266767D600ACA770 /* .gitignore in Resources */,
 				5E83855F2667635400ACA770 /* LaunchScreen.storyboard in Resources */,
 				5E8385712667681600ACA770 /* README.md in Resources */,
 				5E83855C2667635400ACA770 /* Assets.xcassets in Resources */,
 				5E83855A2667635000ACA770 /* Main.storyboard in Resources */,
+				5E2CF7C6266E242E007BB2EB /* segue-001.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

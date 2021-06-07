@@ -541,7 +541,7 @@ printMyFood(eating: lunch) // error
 
 ## **UIKit**
 
-### [Unwind Segue](https://github.com/lgreydev/Help/blob/master/Help/WorkingCode/UnwindSegue.swift)
+### [Unwind Segue](https://github.com/lgreydev/Help/blob/master/Help/UIKit/UnwindSegue.swift)
 [Articl - Unwind Segue](https://developer.apple.com/documentation/uikit/resource_management/dismissing_a_view_controller_with_an_unwind_segue)
 
 **Dismissing a View Controller with an Unwind Segue**
@@ -558,3 +558,5 @@ UIKit determines the target of an unwind segue at runtime, so you aren’t restr
 }
 
 ```
+
+![Unwind Segue](https://github.com/lgreydev/Help/blob/master/Screenshots/segue-001.png)![Connect a Triggering Object to the Exit Control](https://github.com/lgreydev/Help/blob/master/Screenshots/segue-002.png)
