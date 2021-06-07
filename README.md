@@ -558,5 +558,7 @@ UIKit determines the target of an unwind segue at runtime, so you aren’t restr
 }
 
 ```
+<img src="https://github.com/lgreydev/Help/blob/master/Screenshots/segue-002.png" width="300"><img src="https://github.com/lgreydev/Help/blob/master/Screenshots/segue-001.png" width="300">
+
 
 ![Unwind Segue](https://github.com/lgreydev/Help/blob/master/Screenshots/segue-001.png)![Connect a Triggering Object to the Exit Control](https://github.com/lgreydev/Help/blob/master/Screenshots/segue-002.png)
