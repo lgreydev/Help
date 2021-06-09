@@ -23,7 +23,7 @@
 		5E83856B2667652700ACA770 /* CleanClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E83856A2667652700ACA770 /* CleanClass.swift */; };
 		5E83856F266767D600ACA770 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 5E83856E266767D600ACA770 /* .gitignore */; };
 		5E8385712667681600ACA770 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 5E8385702667681600ACA770 /* README.md */; };
-		5E838575266775E300ACA770 /* Lifecycle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E838574266775E300ACA770 /* Lifecycle.swift */; };
+		5E838575266775E300ACA770 /* LifeCycle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E838574266775E300ACA770 /* LifeCycle.swift */; };
 		5E83857926677C7600ACA770 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E83857826677C7600ACA770 /* Extension.swift */; };
 		5E83857B2667814000ACA770 /* LogicallyRelatedElements.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E83857A2667814000ACA770 /* LogicallyRelatedElements.swift */; };
 		5E83857E2667B2A400ACA770 /* DeadCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E83857D2667B2A400ACA770 /* DeadCode.swift */; };
@@ -53,7 +53,7 @@
 		5E83856A2667652700ACA770 /* CleanClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CleanClass.swift; sourceTree = "<group>"; };
 		5E83856E266767D600ACA770 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		5E8385702667681600ACA770 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		5E838574266775E300ACA770 /* Lifecycle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lifecycle.swift; sourceTree = "<group>"; };
+		5E838574266775E300ACA770 /* LifeCycle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LifeCycle.swift; sourceTree = "<group>"; };
 		5E83857826677C7600ACA770 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 		5E83857A2667814000ACA770 /* LogicallyRelatedElements.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogicallyRelatedElements.swift; sourceTree = "<group>"; };
 		5E83857D2667B2A400ACA770 /* DeadCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeadCode.swift; sourceTree = "<group>"; };
@@ -144,7 +144,7 @@
 			isa = PBXGroup;
 			children = (
 				5E83856A2667652700ACA770 /* CleanClass.swift */,
-				5E838574266775E300ACA770 /* Lifecycle.swift */,
+				5E838574266775E300ACA770 /* LifeCycle.swift */,
 				5E83857826677C7600ACA770 /* Extension.swift */,
 				5E83857A2667814000ACA770 /* LogicallyRelatedElements.swift */,
 				5E83857D2667B2A400ACA770 /* DeadCode.swift */,
@@ -270,7 +270,7 @@
 				5E8385832667B92900ACA770 /* CustomStringConvertible.swift in Sources */,
 				5E72DD5E266A76EE00A8E543 /* Guard.swift in Sources */,
 				5E83858B2667C5CB00ACA770 /* ErrorHandling.swift in Sources */,
-				5E838575266775E300ACA770 /* Lifecycle.swift in Sources */,
+				5E838575266775E300ACA770 /* LifeCycle.swift in Sources */,
 				5E8385552667635000ACA770 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
