@@ -81,7 +81,7 @@ final class CleanViewController: UIViewController {
 ```
 
 
-### [Life Cycle](https://github.com/lgreydev/Help/blob/master/Help/CleanCode/LifeCycle.swift)
+### [Life Cycle](https://github.com/lgreydev/Help/blob/master/Help/CleanCode/Lifecycle.swift)
 We move the logic out of the lifecycle methods into separate methods. The logic inside the methods of the ViewController lifecycle should be moved into separate methods, even if you have to create a method with one line of code. Today one, and tomorrow ten.
 
 ```swift
