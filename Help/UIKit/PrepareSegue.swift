@@ -15,6 +15,20 @@ import Foundation
 /*
  func prepare(for segue: UIStoryboardSegue, sender: Any?) {
      guard segue.identifier == "identifier segue" else { fatalError() }
-     segue.destination = textField.text
+     
+ 
+     if segue.destination is DestinationViewController {
+             let vc = segue.destination as? DestinationViewController
+             vc?.property = "text"
+         }
+     
+     
+     if segue.source is SourceViewController {
+             let vc = segue.source as? SourceViewController
+             vc?.property = "text"
+         }
+ 
+ 
+ 
  }
 */
