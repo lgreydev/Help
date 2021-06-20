@@ -592,6 +592,16 @@ func prepare(for segue: UIStoryboardSegue, sender: Any?) {
             let vc = segue.source as? SourceViewController
             vc?.property = "text"
         }
+        
+        /// or >>
+        
+    if let vc = segue.destination as? DestinationViewController {
+            vc.property = "text"
+        }
+        
+    if let vc = segue.destination as? SourceViewController {
+            vc.property = "text"
+        }
 }
 
 ```
