@@ -28,6 +28,7 @@ In this project, I have collected various best practices and iOS development tip
     - [Unwind Segue](#unwind-segue)
     - [Prepare Segue](#prepare-segue)
     - [Perform Segue](#perform-segue)
+    - [Pass Data Delegate](pass-data-delegate)
 
 
 ## **Clean Code**
@@ -646,3 +647,64 @@ This method throws an Exception handling if there is no segue with the specified
 Normally, segues are initiated automatically and not using this method. However, you can use this method in cases where the segue could not be configured in your storyboard file. For example, you might call it from a custom action handler used in response to shake or accelerometer events.
 
 The current view controller must have been loaded from a storyboard. If its storyboard property is nil, perhaps because you allocated and initialized the view controller yourself, this method throws an exception.
+
+
+### [Pass Data Delegate](https://github.com/lgreydev/Help/blob/master/Help/UIKit/PassDataDelegate.swift)
+
+``` swift
+
+protocol MyDelegate: AnyObject {
+    func set(title: String)
+}
+
+class MainViewController: UIViewController, MyDelegate {
+    
+    @IBOutlet weak var labelText: UILabel! // title 1
+    @IBOutlet weak var textField: UITextField!
+    
+    var text: String?
+    
+    @IBAction func buttonAction(_ sender: UIButton) {
+        performSegue(withIdentifier: "1", sender: sender)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        //guard segue.identifier == "123" else { fatalError() }
+        /// SecondaryViewController
+        if let vc = segue.destination as? SecondaryViewController {
+            vc.text = textField.text
+            vc.delegate = self
+        }
+    }
+    
+    /// protocol implementation
+    func set(title: String) {
+        labelText.text = title
+    }
+}
+
+class SecondaryViewController: UIViewController {
+
+    @IBOutlet weak var textLabel: UILabel! // title 2
+    @IBOutlet weak var textField: UITextField!
+    
+    var text: String?
+    weak var delegate: MyDelegate?
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        updateView()
+    }
+    
+    func updateView() {
+        textLabel?.text = text
+    }
+    
+    @IBAction func saveAction(_ sender: UIButton) {
+        delegate?.set(title: textField.text ?? "nil")
+        dismiss(animated: true, completion: nil)
+    }
+}
+
+```
+
