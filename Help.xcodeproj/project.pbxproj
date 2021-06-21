@@ -33,6 +33,7 @@
 		5E83858B2667C5CB00ACA770 /* ErrorHandling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E83858A2667C5CB00ACA770 /* ErrorHandling.swift */; };
 		5E83858D2667D3C400ACA770 /* TypeCasting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E83858C2667D3C400ACA770 /* TypeCasting.swift */; };
 		5EAC17F826807D1C006EC7CD /* PassDataDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EAC17F726807D1C006EC7CD /* PassDataDelegate.swift */; };
+		5EAC17FA26808458006EC7CD /* PassDataClosure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EAC17F926808458006EC7CD /* PassDataClosure.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -64,6 +65,7 @@
 		5E83858A2667C5CB00ACA770 /* ErrorHandling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorHandling.swift; sourceTree = "<group>"; };
 		5E83858C2667D3C400ACA770 /* TypeCasting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeCasting.swift; sourceTree = "<group>"; };
 		5EAC17F726807D1C006EC7CD /* PassDataDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassDataDelegate.swift; sourceTree = "<group>"; };
+		5EAC17F926808458006EC7CD /* PassDataClosure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassDataClosure.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +86,7 @@
 				5E2CF7C7266E61A0007BB2EB /* PrepareSegue.swift */,
 				5E2CF7C9266EB745007BB2EB /* PerformSegue.swift */,
 				5EAC17F726807D1C006EC7CD /* PassDataDelegate.swift */,
+				5EAC17F926808458006EC7CD /* PassDataClosure.swift */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -263,6 +266,7 @@
 				5E83856B2667652700ACA770 /* CleanClass.swift in Sources */,
 				5E83857E2667B2A400ACA770 /* DeadCode.swift in Sources */,
 				5E8385802667B63900ACA770 /* MARK.swift in Sources */,
+				5EAC17FA26808458006EC7CD /* PassDataClosure.swift in Sources */,
 				5E8385572667635000ACA770 /* ViewController.swift in Sources */,
 				5E66D43626694663001CB8F0 /* FailableInitializers.swift in Sources */,
 				5E8385532667635000ACA770 /* AppDelegate.swift in Sources */,
