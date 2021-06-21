@@ -28,7 +28,7 @@ In this project, I have collected various best practices and iOS development tip
     - [Unwind Segue](#unwind-segue)
     - [Prepare Segue](#prepare-segue)
     - [Perform Segue](#perform-segue)
-    - [Pass Data Delegate](pass-data-delegate)
+    - [Pass Data Delegate](#pass-data-delegate)
 
 
 ## **Clean Code**
