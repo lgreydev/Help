@@ -22,6 +22,7 @@ In this project, I have collected various best practices and iOS development tip
     - [Type Casting](#type-casting)
     - [Failable Initializers](#failable-initializers)
     - [Guard](#guard)
+    - [Array Enumerated](#array-enumerated)
 
 
 - [**UIKit**](#uikit)
@@ -543,6 +544,31 @@ printMyFood(eating: breakfast) // print object
 printMyFood(eating: lunch) // error
 
 ```
+
+
+### [Array Enumerated](https://github.com/lgreydev/Help/blob/master/Help/WorkingCode/ArrayEnumerated.swift)
+[documentation](https://developer.apple.com/documentation/swift/array/1687832-enumerated)
+
+Returns a sequence of pairs (n, x), where n represents a consecutive integer starting at zero and x represents an element of the sequence.
+
+```swift
+
+let emojiArray = ["🥵", "😰", "😇", "😱", "🥶"]
+
+for (index, emoji) in emojiArray.enumerated() {
+    print(index, emoji)
+}
+
+//0 🥵
+//1 😰
+//2 😇
+//3 😱
+//4 🥶
+
+```
+
+
+
 
 
 ## **UIKit**

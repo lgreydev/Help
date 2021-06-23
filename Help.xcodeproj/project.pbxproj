@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5E023E89268364C3002465D8 /* ArrayEnumerated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E023E88268364C3002465D8 /* ArrayEnumerated.swift */; };
 		5E2CF7C1266E20AE007BB2EB /* UnwindSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E2CF7C0266E20AE007BB2EB /* UnwindSegue.swift */; };
 		5E2CF7C5266E242E007BB2EB /* segue-002.png in Resources */ = {isa = PBXBuildFile; fileRef = 5E2CF7C3266E242E007BB2EB /* segue-002.png */; };
 		5E2CF7C6266E242E007BB2EB /* segue-001.png in Resources */ = {isa = PBXBuildFile; fileRef = 5E2CF7C4266E242E007BB2EB /* segue-001.png */; };
@@ -37,6 +38,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5E023E88268364C3002465D8 /* ArrayEnumerated.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayEnumerated.swift; sourceTree = "<group>"; };
 		5E2CF7C0266E20AE007BB2EB /* UnwindSegue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnwindSegue.swift; sourceTree = "<group>"; };
 		5E2CF7C3266E242E007BB2EB /* segue-002.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "segue-002.png"; sourceTree = "<group>"; };
 		5E2CF7C4266E242E007BB2EB /* segue-001.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "segue-001.png"; sourceTree = "<group>"; };
@@ -182,6 +184,7 @@
 				5E83858C2667D3C400ACA770 /* TypeCasting.swift */,
 				5E66D43526694663001CB8F0 /* FailableInitializers.swift */,
 				5E72DD5D266A76EE00A8E543 /* Guard.swift */,
+				5E023E88268364C3002465D8 /* ArrayEnumerated.swift */,
 			);
 			path = WorkingCode;
 			sourceTree = "<group>";
@@ -276,6 +279,7 @@
 				5E2CF7CA266EB745007BB2EB /* PerformSegue.swift in Sources */,
 				5E2CF7C1266E20AE007BB2EB /* UnwindSegue.swift in Sources */,
 				5E8385832667B92900ACA770 /* CustomStringConvertible.swift in Sources */,
+				5E023E89268364C3002465D8 /* ArrayEnumerated.swift in Sources */,
 				5E72DD5E266A76EE00A8E543 /* Guard.swift in Sources */,
 				5E83858B2667C5CB00ACA770 /* ErrorHandling.swift in Sources */,
 				5E838575266775E300ACA770 /* LifeCycle.swift in Sources */,
