@@ -23,6 +23,7 @@ In this project, I have collected various best practices and iOS development tip
     - [Failable Initializers](#failable-initializers)
     - [Guard](#guard)
     - [Array Enumerated](#array-enumerated)
+    - [Array Zip](#array-zip)
 
 
 - [**UIKit**](#uikit)
@@ -568,6 +569,27 @@ for (index, emoji) in emojiArray.enumerated() {
 ```
 
 
+
+### [Array Zip](https://github.com/lgreydev/Help/blob/master/Help/WorkingCode/ArrayZip.swift)
+[documentation](https://developer.apple.com/documentation/combine/publishers/autoconnect/zip(_:)/)
+
+Combines elements from another publisher and deliver pairs of elements as tuples.
+
+```swift
+
+let emojiArray = ["🥵", "🥶", "😎", "😱", "😡"]
+let strArray = ["Hot", "Cold", "Good"]
+var newArray = [(String, String)]()
+
+for value in zip(emojiArray, strArray) {
+    newArray.append(value)
+}
+
+print(newArray)
+
+// [("🥵", "Hot"), ("🥶", "Cold"), ("😎", "Good")] // Array of Tuple
+
+```
 
 
 

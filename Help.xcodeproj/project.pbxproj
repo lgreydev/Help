@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		5E023E89268364C3002465D8 /* ArrayEnumerated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E023E88268364C3002465D8 /* ArrayEnumerated.swift */; };
+		5E023E8B2683692F002465D8 /* ArrayZip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E023E8A2683692F002465D8 /* ArrayZip.swift */; };
 		5E2CF7C1266E20AE007BB2EB /* UnwindSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E2CF7C0266E20AE007BB2EB /* UnwindSegue.swift */; };
 		5E2CF7C5266E242E007BB2EB /* segue-002.png in Resources */ = {isa = PBXBuildFile; fileRef = 5E2CF7C3266E242E007BB2EB /* segue-002.png */; };
 		5E2CF7C6266E242E007BB2EB /* segue-001.png in Resources */ = {isa = PBXBuildFile; fileRef = 5E2CF7C4266E242E007BB2EB /* segue-001.png */; };
@@ -39,6 +40,7 @@
 
 /* Begin PBXFileReference section */
 		5E023E88268364C3002465D8 /* ArrayEnumerated.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayEnumerated.swift; sourceTree = "<group>"; };
+		5E023E8A2683692F002465D8 /* ArrayZip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayZip.swift; sourceTree = "<group>"; };
 		5E2CF7C0266E20AE007BB2EB /* UnwindSegue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnwindSegue.swift; sourceTree = "<group>"; };
 		5E2CF7C3266E242E007BB2EB /* segue-002.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "segue-002.png"; sourceTree = "<group>"; };
 		5E2CF7C4266E242E007BB2EB /* segue-001.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "segue-001.png"; sourceTree = "<group>"; };
@@ -125,9 +127,6 @@
 			isa = PBXGroup;
 			children = (
 				5E83856C2667679B00ACA770 /* SupportingFiles */,
-				5E8385562667635000ACA770 /* ViewController.swift */,
-				5E8385582667635000ACA770 /* Main.storyboard */,
-				5E8385602667635400ACA770 /* Info.plist */,
 				5E83857726677A6100ACA770 /* CleanCode */,
 				5E8385812667B91000ACA770 /* Protocols */,
 				5E8385842667BCAB00ACA770 /* Extensions */,
@@ -140,6 +139,9 @@
 		5E83856C2667679B00ACA770 /* SupportingFiles */ = {
 			isa = PBXGroup;
 			children = (
+				5E8385562667635000ACA770 /* ViewController.swift */,
+				5E8385582667635000ACA770 /* Main.storyboard */,
+				5E8385602667635400ACA770 /* Info.plist */,
 				5E8385522667635000ACA770 /* AppDelegate.swift */,
 				5E8385542667635000ACA770 /* SceneDelegate.swift */,
 				5E83855B2667635400ACA770 /* Assets.xcassets */,
@@ -185,6 +187,7 @@
 				5E66D43526694663001CB8F0 /* FailableInitializers.swift */,
 				5E72DD5D266A76EE00A8E543 /* Guard.swift */,
 				5E023E88268364C3002465D8 /* ArrayEnumerated.swift */,
+				5E023E8A2683692F002465D8 /* ArrayZip.swift */,
 			);
 			path = WorkingCode;
 			sourceTree = "<group>";
@@ -272,6 +275,7 @@
 				5EAC17FA26808458006EC7CD /* PassDataClosure.swift in Sources */,
 				5E8385572667635000ACA770 /* ViewController.swift in Sources */,
 				5E66D43626694663001CB8F0 /* FailableInitializers.swift in Sources */,
+				5E023E8B2683692F002465D8 /* ArrayZip.swift in Sources */,
 				5E8385532667635000ACA770 /* AppDelegate.swift in Sources */,
 				5E83857926677C7600ACA770 /* Extension.swift in Sources */,
 				5E83858D2667D3C400ACA770 /* TypeCasting.swift in Sources */,
@@ -432,7 +436,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LGVM9RAH4N;
-				INFOPLIST_FILE = Help/Info.plist;
+				INFOPLIST_FILE = Help/SupportingFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -451,7 +455,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LGVM9RAH4N;
-				INFOPLIST_FILE = Help/Info.plist;
+				INFOPLIST_FILE = Help/SupportingFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
