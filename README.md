@@ -32,6 +32,7 @@ In this project, I have collected various best practices and iOS development tip
     - [Perform Segue](#perform-segue)
     - [Pass Data Delegate](#pass-data-delegate)
     - [Pass Data Closure](#pass-data-closure)
+    - [Dictionary Reduce](#dictionary-reduce])
 
 
 ## **Clean Code**
@@ -569,7 +570,6 @@ for (index, emoji) in emojiArray.enumerated() {
 ```
 
 
-
 ### [Array Zip](https://github.com/lgreydev/Help/blob/master/Help/WorkingCode/ArrayZip.swift)
 [documentation](https://developer.apple.com/documentation/combine/publishers/autoconnect/zip(_:)/)
 
@@ -591,6 +591,24 @@ print(newArray)
 
 ```
 
+
+### [Dictionary Reduce](https://github.com/lgreydev/Help/blob/master/Help/WorkingCode/DictionaryReduce.swift)
+[documentation](https://developer.apple.com/documentation/swift/array/3126956-reduce)
+
+Returns the result of combining the elements of the sequence using the given closure.
+
+```swift
+
+let fruits = ["🍏", "🍓", "🍒", "🍌", "🍏", "🍒", "🍌", "🍌", "🍌", "🍒", "🍒", "🍌", "🍓", "🍓"]
+
+let fruitsCount = fruits.reduce(into: [:]) { counts, fruit in
+    counts[fruit, default: 0] += 1
+}
+
+fruitsCount // ["🍒": 4, "🍏": 2, "🍓": 3, "🍌": 5]
+// [String : Int]
+
+```
 
 
 ## **UIKit**
