@@ -24,6 +24,7 @@ In this project, I have collected various best practices and iOS development tip
     - [Guard](#guard)
     - [Array Enumerated](#array-enumerated)
     - [Array Zip](#array-zip)
+    - [Dictionary Reduce](#dictionary-reduce)
 
 
 - [**UIKit**](#uikit)
@@ -32,8 +33,7 @@ In this project, I have collected various best practices and iOS development tip
     - [Perform Segue](#perform-segue)
     - [Pass Data Delegate](#pass-data-delegate)
     - [Pass Data Closure](#pass-data-closure)
-    - [Dictionary Reduce](#dictionary-reduce])
-
+    
 
 ## **Clean Code**
 Raising code readability in iOS development. Thanks to the application of these tips, your code will become readable, which will further ensure convenience and speed of working with it.
