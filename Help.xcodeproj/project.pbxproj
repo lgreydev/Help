@@ -37,6 +37,7 @@
 		5E83858D2667D3C400ACA770 /* TypeCasting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E83858C2667D3C400ACA770 /* TypeCasting.swift */; };
 		5EAC17F826807D1C006EC7CD /* PassDataDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EAC17F726807D1C006EC7CD /* PassDataDelegate.swift */; };
 		5EAC17FA26808458006EC7CD /* PassDataClosure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EAC17F926808458006EC7CD /* PassDataClosure.swift */; };
+		5EAF0B81268C5F4300D92322 /* LaunchScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EAF0B80268C5F4300D92322 /* LaunchScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -72,6 +73,7 @@
 		5E83858C2667D3C400ACA770 /* TypeCasting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeCasting.swift; sourceTree = "<group>"; };
 		5EAC17F726807D1C006EC7CD /* PassDataDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassDataDelegate.swift; sourceTree = "<group>"; };
 		5EAC17F926808458006EC7CD /* PassDataClosure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassDataClosure.swift; sourceTree = "<group>"; };
+		5EAF0B80268C5F4300D92322 /* LaunchScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,6 +136,7 @@
 				5E8385842667BCAB00ACA770 /* Extensions */,
 				5E8385872667C57600ACA770 /* WorkingCode */,
 				5E2CF7BF266E2087007BB2EB /* UIKit */,
+				5EAF0B7F268C5E9200D92322 /* Features */,
 			);
 			path = Help;
 			sourceTree = "<group>";
@@ -193,6 +196,14 @@
 				5E023E8E26863070002465D8 /* DictionaryReduce.swift */,
 			);
 			path = WorkingCode;
+			sourceTree = "<group>";
+		};
+		5EAF0B7F268C5E9200D92322 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				5EAF0B80268C5F4300D92322 /* LaunchScreen.swift */,
+			);
+			path = Features;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -277,6 +288,7 @@
 				5E8385802667B63900ACA770 /* MARK.swift in Sources */,
 				5EAC17FA26808458006EC7CD /* PassDataClosure.swift in Sources */,
 				5E023E8F26863070002465D8 /* DictionaryReduce.swift in Sources */,
+				5EAF0B81268C5F4300D92322 /* LaunchScreen.swift in Sources */,
 				5E8385572667635000ACA770 /* ViewController.swift in Sources */,
 				5E66D43626694663001CB8F0 /* FailableInitializers.swift in Sources */,
 				5E023E8B2683692F002465D8 /* ArrayZip.swift in Sources */,

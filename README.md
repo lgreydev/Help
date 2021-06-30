@@ -34,6 +34,10 @@ In this project, I have collected various best practices and iOS development tip
     - [Pass Data Delegate](#pass-data-delegate)
     - [Pass Data Closure](#pass-data-closure)
     
+    
+- [**Features**](#features)
+   - [Launch Screen](#launch-screen)
+    
 
 ## **Clean Code**
 Raising code readability in iOS development. Thanks to the application of these tips, your code will become readable, which will further ensure convenience and speed of working with it.
@@ -776,61 +780,65 @@ class SecondaryViewController: UIViewController {
 ```
 
 
+## **Features**
 
-### [Pass Data Closure](https://github.com/lgreydev/Help/blob/master/Help/UIKit/PassDataClosure.swift)
+### [Launch Screen](https://github.com/lgreydev/Help/blob/master/Help/Features/LaunchScreen.swift)
 
 ```swift
 
-class MainViewController: UIViewController {
+class LogoViewController: UIViewController {
     
-    @IBOutlet weak var labelText: UILabel!
-    @IBOutlet weak var textField: UITextField!
+    // MARK: - Private Properties
+    private var imageView: UIImageView = {
+        let imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 150, height: 150))
+        imageView.image = UIImage(named: "logo-icon")
+        return imageView
+    }()
     
-    var text: String?
     
-    @IBAction func buttonAction(_ sender: UIButton) {
-        performSegue(withIdentifier: "1", sender: sender)
+    // MARK: - Lifecycle
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        view.addSubview(imageView)
+        DispatchQueue.main.asyncAfter(deadline: .now()+1.5) {
+            self.performSegue(withIdentifier: "welcomeVC", sender: nil)
+        }
     }
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        //guard segue.identifier == "123" else { fatalError() }
-        
-        /// SecondaryViewController
-        if let vc = segue.destination as? SecondaryViewController {
-            vc.text = textField.text
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        imageView.center = view.center
+        DispatchQueue.main.asyncAfter(deadline: .now()+0.5) {
+            self.animate()
+        }
+    }
+    
+    
+    // MARK: - Private Methods
+    private func animate() {
+        UIView.animate(withDuration: 1.7) {
+            let size = self.view.frame.size.width * 2.5
+            let diffX = size - self.view.frame.width
+            let diffY = self.view.frame.height - size
             
-            /// closure
-            vc.dataClosure = { [weak self] text in
-                self?.labelText.text = text
-            }
+            self.imageView.frame = CGRect(
+                x: -(diffX/2),
+                y: diffY/2,
+                width: size,
+                height: size)
+            self.imageView.alpha = 0
         }
     }
 }
+ 
+ 
+ class WelcomeViewController: UIViewController {
+     
+     override func viewDidLoad() {
+         super.viewDidLoad()
 
+     }
+ }
+ 
+ ```
 
-class SecondaryViewController: UIViewController {
-
-    @IBOutlet weak var textLabel: UILabel! // title 2
-    @IBOutlet weak var textField: UITextField!
-    
-    var text: String?
-    
-    typealias MyClosure = (String) -> () // closure
-    var dataClosure: MyClosure? // closure
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        updateView()
-    }
-    
-    @IBAction func saveAction(_ sender: UIButton) {
-        dataClosure?(textField.text ?? "nil") // closure
-        dismiss(animated: true, completion: nil)
-    }
-    
-    func updateView() {
-        textLabel?.text = text
-    }
-}
-
-```
