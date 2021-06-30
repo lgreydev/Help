@@ -784,7 +784,7 @@ class SecondaryViewController: UIViewController {
 
 ### [Launch Screen](https://github.com/lgreydev/Help/blob/master/Help/Features/LaunchScreen.swift)
 
-[Watch video](https://youtu.be/QpShzjq8q8g)
+[Watch video](https://youtu.be/QpShzjq8q8g)<br>
 [Watch project](https://github.com/lgreydev/LaunchScreen)
 
 ```swift
