@@ -15,6 +15,7 @@
 		5E2CF7C6266E242E007BB2EB /* segue-001.png in Resources */ = {isa = PBXBuildFile; fileRef = 5E2CF7C4266E242E007BB2EB /* segue-001.png */; };
 		5E2CF7C8266E61A0007BB2EB /* PrepareSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E2CF7C7266E61A0007BB2EB /* PrepareSegue.swift */; };
 		5E2CF7CA266EB745007BB2EB /* PerformSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E2CF7C9266EB745007BB2EB /* PerformSegue.swift */; };
+		5E5FE82426959E5100C5A396 /* Equatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5FE82326959E5100C5A396 /* Equatable.swift */; };
 		5E66D43626694663001CB8F0 /* FailableInitializers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E66D43526694663001CB8F0 /* FailableInitializers.swift */; };
 		5E72DD5E266A76EE00A8E543 /* Guard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E72DD5D266A76EE00A8E543 /* Guard.swift */; };
 		5E8385532667635000ACA770 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E8385522667635000ACA770 /* AppDelegate.swift */; };
@@ -49,6 +50,7 @@
 		5E2CF7C4266E242E007BB2EB /* segue-001.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "segue-001.png"; sourceTree = "<group>"; };
 		5E2CF7C7266E61A0007BB2EB /* PrepareSegue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrepareSegue.swift; sourceTree = "<group>"; };
 		5E2CF7C9266EB745007BB2EB /* PerformSegue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerformSegue.swift; sourceTree = "<group>"; };
+		5E5FE82326959E5100C5A396 /* Equatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Equatable.swift; sourceTree = "<group>"; };
 		5E66D43526694663001CB8F0 /* FailableInitializers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FailableInitializers.swift; sourceTree = "<group>"; };
 		5E72DD5D266A76EE00A8E543 /* Guard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Guard.swift; sourceTree = "<group>"; };
 		5E83854F2667635000ACA770 /* Help.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Help.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -172,6 +174,7 @@
 			isa = PBXGroup;
 			children = (
 				5E8385822667B92900ACA770 /* CustomStringConvertible.swift */,
+				5E5FE82326959E5100C5A396 /* Equatable.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -293,6 +296,7 @@
 				5E66D43626694663001CB8F0 /* FailableInitializers.swift in Sources */,
 				5E023E8B2683692F002465D8 /* ArrayZip.swift in Sources */,
 				5E8385532667635000ACA770 /* AppDelegate.swift in Sources */,
+				5E5FE82426959E5100C5A396 /* Equatable.swift in Sources */,
 				5E83857926677C7600ACA770 /* Extension.swift in Sources */,
 				5E83858D2667D3C400ACA770 /* TypeCasting.swift in Sources */,
 				5EAC17F826807D1C006EC7CD /* PassDataDelegate.swift in Sources */,

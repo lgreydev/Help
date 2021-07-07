@@ -13,6 +13,7 @@ In this project, I have collected various best practices and iOS development tip
     
 - [**Protocols**](#protocols)
     - [CustomStringConvertible](#customstringconvertible)
+    - [Equatable](#equatable)
     
 - [**Extensions**](#extensions)
     - [Int + Random](#int-random)
@@ -332,6 +333,31 @@ struct Card: CustomStringConvertible {
 
 let card = Card(suit: .hearts, rank: .king)
 print(card) // 13 ♥️ nice print
+
+```
+
+
+### [Equatable](https://github.com/lgreydev/Help/blob/master/Help/Protocols/Equatable.swift)
+
+[Documentation](https://developer.apple.com/documentation/swift/equatable)
+
+
+```swift
+
+struct User: Equatable {
+    let login: String
+    let password: Int
+    
+    static func == (lhs: User, rhs: User) -> Bool {
+        return lhs.password == rhs.password
+    }
+}
+
+let userOne = User(login: "mike", password: 123 )
+let userTwo = User(login: "mikeeeee", password: 123 )
+
+userOne == userTwo ? print("login") : print("not login")
+// login
 
 ```
 
