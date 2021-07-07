@@ -14,6 +14,7 @@ In this project, I have collected various best practices and iOS development tip
 - [**Protocols**](#protocols)
     - [CustomStringConvertible](#customstringconvertible)
     - [Equatable](#equatable)
+    - [Comparable](#comparable)
     
 - [**Extensions**](#extensions)
     - [Int + Random](#int-random)
@@ -341,7 +342,6 @@ print(card) // 13 ♥️ nice print
 
 [Documentation](https://developer.apple.com/documentation/swift/equatable)
 
-
 ```swift
 
 struct User: Equatable {
@@ -358,6 +358,31 @@ let userTwo = User(login: "mikeeeee", password: 123 )
 
 userOne == userTwo ? print("login") : print("not login")
 // login
+
+```
+
+
+### [Comparable](https://github.com/lgreydev/Help/blob/master/Help/Protocols/Comparable.swift)
+
+[Documentation](https://developer.apple.com/documentation/swift/comparable/)
+
+```swift
+
+struct User: Comparable {
+    
+    let name: String
+    let money: Int
+    
+    static func < (lhs: User, rhs: User) -> Bool {
+        return lhs.money < rhs.money
+    }
+}
+
+let mike = User(name: "Mike", money: 50 )
+let bob = User(name: "Bob", money: 40 )
+
+mike < bob // false
+mike > bob // true
 
 ```
 
