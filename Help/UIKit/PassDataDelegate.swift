@@ -23,57 +23,50 @@ import UIKit
  */
 
 
-
-
-protocol MyDelegate: AnyObject {
-    func set(title: String)
+protocol FirstViewControllerDelegate: AnyObject {
+    func update(text: String)
 }
 
-class MainViewController: UIViewController, MyDelegate {
-    
-    @IBOutlet weak var labelText: UILabel! // title 1
-    @IBOutlet weak var textField: UITextField!
-    
-    var text: String?
-    
-    @IBAction func buttonAction(_ sender: UIButton) {
-        performSegue(withIdentifier: "1", sender: sender)
-    }
-    
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        //guard segue.identifier == "123" else { fatalError() }
-        /// SecondaryViewController
-        if let vc = segue.destination as? SecondaryViewController {
-            vc.text = textField.text
-            vc.delegate = self
-        }
-    }
-    
-    /// protocol implementation
-    func set(title: String) {
-        labelText.text = title
-    }
-}
+/// - Implementation option through extensions
+//extension FirstViewController: FirstViewControllerDelegate {
+//    func update(text: String) {
+//        textLabel.text = text
+//    }
+//}
 
-class SecondaryViewController: UIViewController {
-
-    @IBOutlet weak var textLabel: UILabel! // title 2
-    @IBOutlet weak var textField: UITextField!
+class FirstViewController: UIViewController, FirstViewControllerDelegate {
     
-    var text: String?
-    weak var delegate: MyDelegate?
+    @IBOutlet weak var textLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        updateView()
+        
     }
     
-    func updateView() {
-        textLabel?.text = text
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let secondVC = segue.destination as? SecondViewController else { fatalError() }
+        secondVC.delegate = self
     }
     
-    @IBAction func saveAction(_ sender: UIButton) {
-        delegate?.set(title: textField.text ?? "nil")
+    func update(text: String) {
+        textLabel.text = text
+    }
+}
+
+
+class SecondViewController: UIViewController {
+
+    @IBOutlet weak var textLabel: UILabel!
+    
+    weak var delegate: FirstViewControllerDelegate?
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+    }
+    
+    @IBAction func actionButton(_ sender: UIButton) {
+        delegate?.update(text: "Text was changed")
         dismiss(animated: true, completion: nil)
     }
 }
