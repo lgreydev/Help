@@ -10,54 +10,40 @@ import UIKit
 
 
 /*
-class MainViewController: UIViewController {
+
+class FirstViewController: UIViewController {
     
-    @IBOutlet weak var labelText: UILabel!
-    @IBOutlet weak var textField: UITextField!
+    @IBOutlet weak var textLabel: UILabel!
     
-    var text: String?
-    
-    @IBAction func buttonAction(_ sender: UIButton) {
-        performSegue(withIdentifier: "1", sender: sender)
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        //guard segue.identifier == "123" else { fatalError() }
-        
-        /// SecondaryViewController
-        if let vc = segue.destination as? SecondaryViewController {
-            vc.text = textField.text
-            
-            /// closure
-            vc.dataClosure = { [weak self] text in
-                self?.labelText.text = text
-            }
+        guard let secondVC = segue.destination as? SecondViewController else { fatalError() }
+        secondVC.closure = { [weak self] text in
+            self?.textLabel.text = text
         }
     }
 }
 
-class SecondaryViewController: UIViewController {
 
-    @IBOutlet weak var textLabel: UILabel! // title 2
-    @IBOutlet weak var textField: UITextField!
+class SecondViewController: UIViewController {
+
+    @IBOutlet weak var textLabel: UILabel!
     
-    var text: String?
-    
-    typealias MyClosure = (String) -> () // closure
-    var dataClosure: MyClosure? // closure
-    
+    var closure: ((String) -> ())?
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        updateView()
+        
     }
     
-    @IBAction func saveAction(_ sender: UIButton) {
-        dataClosure?(textField.text ?? "nil") // closure
+    @IBAction func actionButton(_ sender: UIButton) {
+        closure?("I can pass data by closure")
         dismiss(animated: true, completion: nil)
     }
-    
-    func updateView() {
-        textLabel?.text = text
-    }
 }
-*/
+
+ */
