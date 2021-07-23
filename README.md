@@ -917,12 +917,11 @@ class LogoViewController: UIViewController {
  
  ```
 
-### [Launch Screen](https://github.com/lgreydev/Help/blob/master/Help/Features/CustomView.swift)
+### [Custom View](https://github.com/lgreydev/Help/blob/master/Help/Features/CustomView.swift)
 
-/// Article
-/// https://medium.com/@umairhassanbaig/ios-swift-creating-a-custom-view-with-xib-ace878cd41c5
+[Article](https://medium.com/@umairhassanbaig/ios-swift-creating-a-custom-view-with-xib-ace878cd41c5)
 
-```
+``` swift
 
 class PersonView: UIView {
 
