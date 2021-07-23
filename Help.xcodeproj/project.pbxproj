@@ -15,6 +15,7 @@
 		5E2CF7C6266E242E007BB2EB /* segue-001.png in Resources */ = {isa = PBXBuildFile; fileRef = 5E2CF7C4266E242E007BB2EB /* segue-001.png */; };
 		5E2CF7C8266E61A0007BB2EB /* PrepareSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E2CF7C7266E61A0007BB2EB /* PrepareSegue.swift */; };
 		5E2CF7CA266EB745007BB2EB /* PerformSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E2CF7C9266EB745007BB2EB /* PerformSegue.swift */; };
+		5E5974F526AAAA46006DD0DC /* CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5974F426AAAA46006DD0DC /* CustomView.swift */; };
 		5E5FE82426959E5100C5A396 /* Equatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5FE82326959E5100C5A396 /* Equatable.swift */; };
 		5E5FE8262695A27B00C5A396 /* Comparable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5FE8252695A27B00C5A396 /* Comparable.swift */; };
 		5E66D43626694663001CB8F0 /* FailableInitializers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E66D43526694663001CB8F0 /* FailableInitializers.swift */; };
@@ -51,6 +52,7 @@
 		5E2CF7C4266E242E007BB2EB /* segue-001.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "segue-001.png"; sourceTree = "<group>"; };
 		5E2CF7C7266E61A0007BB2EB /* PrepareSegue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrepareSegue.swift; sourceTree = "<group>"; };
 		5E2CF7C9266EB745007BB2EB /* PerformSegue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerformSegue.swift; sourceTree = "<group>"; };
+		5E5974F426AAAA46006DD0DC /* CustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomView.swift; sourceTree = "<group>"; };
 		5E5FE82326959E5100C5A396 /* Equatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Equatable.swift; sourceTree = "<group>"; };
 		5E5FE8252695A27B00C5A396 /* Comparable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comparable.swift; sourceTree = "<group>"; };
 		5E66D43526694663001CB8F0 /* FailableInitializers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FailableInitializers.swift; sourceTree = "<group>"; };
@@ -208,6 +210,7 @@
 			isa = PBXGroup;
 			children = (
 				5EAF0B80268C5F4300D92322 /* LaunchScreen.swift */,
+				5E5974F426AAAA46006DD0DC /* CustomView.swift */,
 			);
 			path = Features;
 			sourceTree = "<group>";
@@ -307,6 +310,7 @@
 				5E2CF7CA266EB745007BB2EB /* PerformSegue.swift in Sources */,
 				5E2CF7C1266E20AE007BB2EB /* UnwindSegue.swift in Sources */,
 				5E8385832667B92900ACA770 /* CustomStringConvertible.swift in Sources */,
+				5E5974F526AAAA46006DD0DC /* CustomView.swift in Sources */,
 				5E023E89268364C3002465D8 /* ArrayEnumerated.swift in Sources */,
 				5E72DD5E266A76EE00A8E543 /* Guard.swift in Sources */,
 				5E83858B2667C5CB00ACA770 /* ErrorHandling.swift in Sources */,
