@@ -31,7 +31,8 @@ In this project, I have collected various best practices and iOS development tip
 
 - [**UIKit**](#uikit)
     - [Table View](#table-view)
-        - [MoveRowAtTo](#moverowatto)
+        - [Move Row](#move-row)
+        - [Delete Row](#delete-row)
     - [Unwind Segue](#unwind-segue)
     - [Prepare Segue](#prepare-segue)
     - [Perform Segue](#perform-segue)
@@ -673,12 +674,12 @@ fruitsCount // ["🍒": 4, "🍏": 2, "🍓": 3, "🍌": 5]
 
 ## Table View
 
-### [MoveRowAtTo](https://github.com/lgreydev/Help/blob/master/Help/UIKit/TableView/MoveRowAtTo.swift)
+### [Move Row](https://github.com/lgreydev/Help/blob/master/Help/UIKit/TableView/MoveRow.swift)
 [Documentation](https://developer.apple.com/documentation/uikit/uitableviewdatasource/1614867-tableview)
 
 ```swift
 
-class SomeClass: UITableViewController {
+class MoveRow: UITableViewController {
     
     var arrayElement = [String]()
     
@@ -690,6 +691,29 @@ class SomeClass: UITableViewController {
 
 ```
 
+### [Move Row](https://github.com/lgreydev/Help/blob/master/Help/UIKit/TableView/DeleteRow.swift)
+[Documentation1](https://developer.apple.com/documentation/uikit/uitableviewdiffabledatasource/3375816-tableview)
+[Documentation2](https://developer.apple.com/documentation/uikit/uitableviewdiffabledatasource/3375814-tableview)
+
+```swift
+
+class DeleteRow: UITableViewController {
+    
+    var arrayElement = [String]()
+    
+    override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
+        true
+    }
+    
+    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
+            arrayElement.remove(at: indexPath.row)
+            tableView.deleteRows(at: [indexPath], with: .automatic)
+        }
+    }
+}
+
+```
 
 ### [Unwind Segue](https://github.com/lgreydev/Help/blob/master/Help/UIKit/UnwindSegue.swift)
 [Articl - Unwind Segue](https://developer.apple.com/documentation/uikit/resource_management/dismissing_a_view_controller_with_an_unwind_segue)

@@ -7,7 +7,7 @@
 
 import UIKit
 
-class SomeClass: UITableViewController {
+class MoveRow: UITableViewController {
     
     var arrayElement = [String]()
     
