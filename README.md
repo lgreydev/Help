@@ -30,6 +30,8 @@ In this project, I have collected various best practices and iOS development tip
 
 
 - [**UIKit**](#uikit)
+    - [Table View](#tableview)
+        - [MoveRowAtTo](#moverowatto)
     - [Unwind Segue](#unwind-segue)
     - [Prepare Segue](#prepare-segue)
     - [Perform Segue](#perform-segue)
@@ -668,6 +670,26 @@ fruitsCount // ["🍒": 4, "🍏": 2, "🍓": 3, "🍌": 5]
 
 
 ## **UIKit**
+
+## Table View
+
+### [MoveRowAtTo](https://github.com/lgreydev/Help/blob/master/Help/UIKit/TableView/MoveRowAtTo.swift)
+[Documentation](https://developer.apple.com/documentation/uikit/uitableviewdatasource/1614867-tableview)
+
+```swift
+
+class SomeClass: UITableViewController {
+    
+    var arrayElement = [String]()
+    
+    override func tableView(_ tableView: UITableView, moveRowAt sourceIndexPath: IndexPath, to destinationIndexPath: IndexPath) {
+        let someRow = arrayElement.remove(at: sourceIndexPath.row)
+        arrayElement.insert(someRow, at: destinationIndexPath.row)
+    }
+}
+
+```
+
 
 ### [Unwind Segue](https://github.com/lgreydev/Help/blob/master/Help/UIKit/UnwindSegue.swift)
 [Articl - Unwind Segue](https://developer.apple.com/documentation/uikit/resource_management/dismissing_a_view_controller_with_an_unwind_segue)
