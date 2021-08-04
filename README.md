@@ -30,7 +30,7 @@ In this project, I have collected various best practices and iOS development tip
 
 
 - [**UIKit**](#uikit)
-    - [Table View](#tableview)
+    - [Table View](#table-view)
         - [MoveRowAtTo](#moverowatto)
     - [Unwind Segue](#unwind-segue)
     - [Prepare Segue](#prepare-segue)
