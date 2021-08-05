@@ -42,6 +42,7 @@
 		5EAC17FA26808458006EC7CD /* PassDataClosure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EAC17F926808458006EC7CD /* PassDataClosure.swift */; };
 		5EAC92BA26BA8D0D00A6198C /* MoveRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EAC92B926BA8D0D00A6198C /* MoveRow.swift */; };
 		5EAC92BC26BAA06300A6198C /* DeleteRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EAC92BB26BAA06300A6198C /* DeleteRow.swift */; };
+		5EAC92BE26BC0BCD00A6198C /* Source.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EAC92BD26BC0BCD00A6198C /* Source.swift */; };
 		5EAF0B81268C5F4300D92322 /* LaunchScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EAF0B80268C5F4300D92322 /* LaunchScreen.swift */; };
 /* End PBXBuildFile section */
 
@@ -83,6 +84,7 @@
 		5EAC17F926808458006EC7CD /* PassDataClosure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassDataClosure.swift; sourceTree = "<group>"; };
 		5EAC92B926BA8D0D00A6198C /* MoveRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoveRow.swift; sourceTree = "<group>"; };
 		5EAC92BB26BAA06300A6198C /* DeleteRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteRow.swift; sourceTree = "<group>"; };
+		5EAC92BD26BC0BCD00A6198C /* Source.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Source.swift; sourceTree = "<group>"; };
 		5EAF0B80268C5F4300D92322 /* LaunchScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -104,6 +106,7 @@
 				5E2CF7C0266E20AE007BB2EB /* UnwindSegue.swift */,
 				5E2CF7C7266E61A0007BB2EB /* PrepareSegue.swift */,
 				5E2CF7C9266EB745007BB2EB /* PerformSegue.swift */,
+				5EAC92BD26BC0BCD00A6198C /* Source.swift */,
 				5EAC17F726807D1C006EC7CD /* PassDataDelegate.swift */,
 				5EAC17F926808458006EC7CD /* PassDataClosure.swift */,
 			);
@@ -311,6 +314,7 @@
 				5E83857E2667B2A400ACA770 /* DeadCode.swift in Sources */,
 				5E8385802667B63900ACA770 /* MARK.swift in Sources */,
 				5EAC17FA26808458006EC7CD /* PassDataClosure.swift in Sources */,
+				5EAC92BE26BC0BCD00A6198C /* Source.swift in Sources */,
 				5E023E8F26863070002465D8 /* DictionaryReduce.swift in Sources */,
 				5EAF0B81268C5F4300D92322 /* LaunchScreen.swift in Sources */,
 				5E8385572667635000ACA770 /* ViewController.swift in Sources */,

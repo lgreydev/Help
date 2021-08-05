@@ -36,6 +36,7 @@ In this project, I have collected various best practices and iOS development tip
     - [Unwind Segue](#unwind-segue)
     - [Prepare Segue](#prepare-segue)
     - [Perform Segue](#perform-segue)
+    - [Source](#source)
     - [Pass Data Delegate](#pass-data-delegate)
     - [Pass Data Closure](#pass-data-closure)
     
@@ -799,6 +800,24 @@ Normally, segues are initiated automatically and not using this method. However,
 
 The current view controller must have been loaded from a storyboard. If its storyboard property is nil, perhaps because you allocated and initialized the view controller yourself, this method throws an exception.
 
+
+### [Source](https://github.com/lgreydev/Help/blob/master/Help/UIKit/Source.swift)
+[Documentation](https://developer.apple.com/documentation/uikit/uistoryboardsegue/1621918-source)
+
+```swift
+
+class Source: UIViewController {
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let source = segue.source as! OtherSource
+        source.property = 1
+    }
+}
+
+class OtherSource: UIViewController {
+    var property = 0
+}
+
+```
 
 ### [Pass Data Delegate](https://github.com/lgreydev/Help/blob/master/Help/UIKit/PassDataDelegate.swift)
 
