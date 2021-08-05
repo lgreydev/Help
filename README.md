@@ -37,6 +37,7 @@ In this project, I have collected various best practices and iOS development tip
     - [Prepare Segue](#prepare-segue)
     - [Perform Segue](#perform-segue)
     - [Source](#source)
+    - [Destination](#destination)
     - [Pass Data Delegate](#pass-data-delegate)
     - [Pass Data Closure](#pass-data-closure)
     
@@ -814,6 +815,25 @@ class Source: UIViewController {
 }
 
 class OtherSource: UIViewController {
+    var property = 0
+}
+
+```
+
+
+### [Destination](https://github.com/lgreydev/Help/blob/master/Help/UIKit/Destination.swift)
+[Documentation](https://developer.apple.com/documentation/uikit/uistoryboardsegue/1621916-destination)
+
+```swift
+
+class Destination: UIViewController {
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let destination = segue.destination as! OtherDestination
+        destination.property = 1
+    }
+}
+
+class OtherDestination: UIViewController {
     var property = 0
 }
 
