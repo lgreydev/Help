@@ -30,6 +30,8 @@ In this project, I have collected various best practices and iOS development tip
 
 
 - [**UIKit**](#uikit)
+    - [Data Manager](#data-manager)
+        - [Save and Load Data on Device](#save-and-load-data-on-device)
     - [Table View](#table-view)
         - [Move Row](#move-row)
         - [Delete Row](#delete-row)
@@ -671,8 +673,49 @@ fruitsCount // ["🍒": 4, "🍏": 2, "🍓": 3, "🍌": 5]
 
 ```
 
-
 ## **UIKit**
+
+## Data Manager
+
+###[Save and Load Data on Device](https://github.com/lgreydev/Help/blob/master/Help/UIKit/DataManager/SaveAndLoadDataOnDevice.swift)
+[Documentation - Data Manager](https://developer.apple.com/documentation/foundation/filemanager)
+[Documentation - Codable](https://developer.apple.com/documentation/swift/codable)
+[Documentation - Decodable](https://developer.apple.com/documentation/swift/decodable)
+[Documentation - Encodable](https://developer.apple.com/documentation/swift/encodable)
+
+```swift
+
+class SaveAndLoadDataOnDevice {
+    
+    // Create an archive file
+    var archiveURL: URL? {
+        guard let documentDirectory = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first else { fatalError() }
+        return documentDirectory.appendingPathComponent("nameFile").appendingPathExtension("plist")
+    }
+    
+    // Decoding an object from an archive
+    func loadAll() -> [SameObject]? {
+        let decoder = PropertyListDecoder()
+        guard let archiveURL = archiveURL else { fatalError() }
+        guard let decoderSameObject = try? Data(contentsOf: archiveURL) else { fatalError() }
+        return try? decoder.decode([SameObject].self, from: decoderSameObject)
+    }
+    
+    // Encoder the received object into the archive file
+    func saveEmojis(_ object: [SameObject]) {
+        let encoder = PropertyListEncoder()
+        guard let archiveURL = archiveURL else { fatalError() }
+        guard let encoderSameObject = try? encoder.encode(object) else { fatalError() }
+        try? encoderSameObject.write(to: archiveURL, options: .noFileProtection)
+    }
+}
+
+// Class have to protocol 'Codable'
+class SameObject: Codable {
+    
+}
+
+```
 
 ## Table View
 

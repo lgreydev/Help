@@ -44,6 +44,7 @@
 		5EAC92BC26BAA06300A6198C /* DeleteRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EAC92BB26BAA06300A6198C /* DeleteRow.swift */; };
 		5EAC92BE26BC0BCD00A6198C /* Source.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EAC92BD26BC0BCD00A6198C /* Source.swift */; };
 		5EAC92C026BC0E4D00A6198C /* Destination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EAC92BF26BC0E4D00A6198C /* Destination.swift */; };
+		5EAC92C726BD35E700A6198C /* SaveAndLoadDataOnDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EAC92C626BD35E700A6198C /* SaveAndLoadDataOnDevice.swift */; };
 		5EAF0B81268C5F4300D92322 /* LaunchScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EAF0B80268C5F4300D92322 /* LaunchScreen.swift */; };
 /* End PBXBuildFile section */
 
@@ -87,6 +88,7 @@
 		5EAC92BB26BAA06300A6198C /* DeleteRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteRow.swift; sourceTree = "<group>"; };
 		5EAC92BD26BC0BCD00A6198C /* Source.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Source.swift; sourceTree = "<group>"; };
 		5EAC92BF26BC0E4D00A6198C /* Destination.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Destination.swift; sourceTree = "<group>"; };
+		5EAC92C626BD35E700A6198C /* SaveAndLoadDataOnDevice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveAndLoadDataOnDevice.swift; sourceTree = "<group>"; };
 		5EAF0B80268C5F4300D92322 /* LaunchScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -104,6 +106,7 @@
 		5E2CF7BF266E2087007BB2EB /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
+				5EAC92C326BD317800A6198C /* DataManager */,
 				5EAC92B826BA8CBC00A6198C /* TableView */,
 				5E2CF7C0266E20AE007BB2EB /* UnwindSegue.swift */,
 				5E2CF7C7266E61A0007BB2EB /* PrepareSegue.swift */,
@@ -226,6 +229,14 @@
 			path = TableView;
 			sourceTree = "<group>";
 		};
+		5EAC92C326BD317800A6198C /* DataManager */ = {
+			isa = PBXGroup;
+			children = (
+				5EAC92C626BD35E700A6198C /* SaveAndLoadDataOnDevice.swift */,
+			);
+			path = DataManager;
+			sourceTree = "<group>";
+		};
 		5EAF0B7F268C5E9200D92322 /* Features */ = {
 			isa = PBXGroup;
 			children = (
@@ -310,6 +321,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5E8385862667BE7500ACA770 /* Int+Random.swift in Sources */,
+				5EAC92C726BD35E700A6198C /* SaveAndLoadDataOnDevice.swift in Sources */,
 				5E2CF7C8266E61A0007BB2EB /* PrepareSegue.swift in Sources */,
 				5E83857B2667814000ACA770 /* LogicallyRelatedElements.swift in Sources */,
 				5EAC92C026BC0E4D00A6198C /* Destination.swift in Sources */,
