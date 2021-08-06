@@ -677,10 +677,10 @@ fruitsCount // ["🍒": 4, "🍏": 2, "🍓": 3, "🍌": 5]
 
 ## Data Manager
 
-###[Save and Load Data on Device](https://github.com/lgreydev/Help/blob/master/Help/UIKit/DataManager/SaveAndLoadDataOnDevice.swift)
-[Documentation - Data Manager](https://developer.apple.com/documentation/foundation/filemanager)
-[Documentation - Codable](https://developer.apple.com/documentation/swift/codable)
-[Documentation - Decodable](https://developer.apple.com/documentation/swift/decodable)
+### [Save and Load Data on Device](https://github.com/lgreydev/Help/blob/master/Help/UIKit/DataManager/SaveAndLoadDataOnDevice.swift)
+[Documentation - Data Manager](https://developer.apple.com/documentation/foundation/filemanager)<br>
+[Documentation - Codable](https://developer.apple.com/documentation/swift/codable)<br>
+[Documentation - Decodable](https://developer.apple.com/documentation/swift/decodable)<br>
 [Documentation - Encodable](https://developer.apple.com/documentation/swift/encodable)
 
 ```swift
