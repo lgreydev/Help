@@ -46,6 +46,7 @@
 		5EAC92C026BC0E4D00A6198C /* Destination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EAC92BF26BC0E4D00A6198C /* Destination.swift */; };
 		5EAC92C726BD35E700A6198C /* SaveAndLoadDataOnDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EAC92C626BD35E700A6198C /* SaveAndLoadDataOnDevice.swift */; };
 		5EAF0B81268C5F4300D92322 /* LaunchScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EAF0B80268C5F4300D92322 /* LaunchScreen.swift */; };
+		5EDE65CE26E29E0000DB71C0 /* SwipeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EDE65CD26E29E0000DB71C0 /* SwipeScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -90,6 +91,7 @@
 		5EAC92BF26BC0E4D00A6198C /* Destination.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Destination.swift; sourceTree = "<group>"; };
 		5EAC92C626BD35E700A6198C /* SaveAndLoadDataOnDevice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveAndLoadDataOnDevice.swift; sourceTree = "<group>"; };
 		5EAF0B80268C5F4300D92322 /* LaunchScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreen.swift; sourceTree = "<group>"; };
+		5EDE65CD26E29E0000DB71C0 /* SwipeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -242,6 +244,7 @@
 			children = (
 				5EAF0B80268C5F4300D92322 /* LaunchScreen.swift */,
 				5E5974F426AAAA46006DD0DC /* CustomView.swift */,
+				5EDE65CD26E29E0000DB71C0 /* SwipeScreen.swift */,
 			);
 			path = Features;
 			sourceTree = "<group>";
@@ -320,6 +323,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5EDE65CE26E29E0000DB71C0 /* SwipeScreen.swift in Sources */,
 				5E8385862667BE7500ACA770 /* Int+Random.swift in Sources */,
 				5EAC92C726BD35E700A6198C /* SaveAndLoadDataOnDevice.swift in Sources */,
 				5E2CF7C8266E61A0007BB2EB /* PrepareSegue.swift in Sources */,

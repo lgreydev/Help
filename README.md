@@ -47,6 +47,7 @@ In this project, I have collected various best practices and iOS development tip
 - [**Features**](#features)
    - [Launch Screen](#launch-screen)
    - [Custom View](#custom-view)
+   - [Swipe Screen](#swipe-screen)
     
 
 ## **Clean Code**
@@ -1075,7 +1076,6 @@ class PersonView: UIView {
         }
 }
 
-
 extension UIView
 {
     func fixInView(_ container: UIView!) -> Void{
@@ -1086,6 +1086,39 @@ extension UIView
         NSLayoutConstraint(item: self, attribute: .trailing, relatedBy: .equal, toItem: container, attribute: .trailing, multiplier: 1.0, constant: 0).isActive = true
         NSLayoutConstraint(item: self, attribute: .top, relatedBy: .equal, toItem: container, attribute: .top, multiplier: 1.0, constant: 0).isActive = true
         NSLayoutConstraint(item: self, attribute: .bottom, relatedBy: .equal, toItem: container, attribute: .bottom, multiplier: 1.0, constant: 0).isActive = true
+    }
+}
+
+```
+
+
+### [Swipe Screen](https://github.com/lgreydev/Help/blob/master/Help/Features/SwipeScreen.swift)
+
+``` swift
+
+private func configureSwipe() {
+    let swipeRight = UISwipeGestureRecognizer(target: self, action: #selector(respondToSwipeGesture))
+    swipeRight.direction = .right
+    self.view.addGestureRecognizer(swipeRight)
+    
+    let swipeLeft = UISwipeGestureRecognizer(target: self, action: #selector(respondToSwipeGesture))
+    swipeLeft.direction = .left
+    self.view.addGestureRecognizer(swipeLeft)
+}
+
+@objc
+private func respondToSwipeGesture(gesture: UIGestureRecognizer) {
+    if let swipeGesture = gesture as? UISwipeGestureRecognizer {
+        switch swipeGesture.direction {
+        case .right:
+        print("right swipe")
+        // add action!
+        case .left:
+        print("left swipe")
+        // add action!
+        default:
+            break
+        }
     }
 }
 
