@@ -47,6 +47,7 @@
 		5EAC92C726BD35E700A6198C /* SaveAndLoadDataOnDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EAC92C626BD35E700A6198C /* SaveAndLoadDataOnDevice.swift */; };
 		5EAF0B81268C5F4300D92322 /* LaunchScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EAF0B80268C5F4300D92322 /* LaunchScreen.swift */; };
 		5EDE65CE26E29E0000DB71C0 /* SwipeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EDE65CD26E29E0000DB71C0 /* SwipeScreen.swift */; };
+		5EF5E01526F72FE40068A717 /* EnumDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EF5E01426F72FE40068A717 /* EnumDataModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -92,6 +93,7 @@
 		5EAC92C626BD35E700A6198C /* SaveAndLoadDataOnDevice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveAndLoadDataOnDevice.swift; sourceTree = "<group>"; };
 		5EAF0B80268C5F4300D92322 /* LaunchScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreen.swift; sourceTree = "<group>"; };
 		5EDE65CD26E29E0000DB71C0 /* SwipeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeScreen.swift; sourceTree = "<group>"; };
+		5EF5E01426F72FE40068A717 /* EnumDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnumDataModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -218,6 +220,7 @@
 				5E023E88268364C3002465D8 /* ArrayEnumerated.swift */,
 				5E023E8A2683692F002465D8 /* ArrayZip.swift */,
 				5E023E8E26863070002465D8 /* DictionaryReduce.swift */,
+				5EF5E01426F72FE40068A717 /* EnumDataModel.swift */,
 			);
 			path = WorkingCode;
 			sourceTree = "<group>";
@@ -349,6 +352,7 @@
 				5EAC17F826807D1C006EC7CD /* PassDataDelegate.swift in Sources */,
 				5E2CF7CA266EB745007BB2EB /* PerformSegue.swift in Sources */,
 				5E2CF7C1266E20AE007BB2EB /* UnwindSegue.swift in Sources */,
+				5EF5E01526F72FE40068A717 /* EnumDataModel.swift in Sources */,
 				5E8385832667B92900ACA770 /* CustomStringConvertible.swift in Sources */,
 				5E5974F526AAAA46006DD0DC /* CustomView.swift in Sources */,
 				5E023E89268364C3002465D8 /* ArrayEnumerated.swift in Sources */,
