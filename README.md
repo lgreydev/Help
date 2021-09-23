@@ -49,6 +49,7 @@ In this project, I have collected various best practices and iOS development tip
    - [Launch Screen](#launch-screen)
    - [Custom View](#custom-view)
    - [Swipe Screen](#swipe-screen)
+   - [Add Home Screen Quick Actions](#add-home-screen-quick-actions)
     
 
 ## **Clean Code**
@@ -300,11 +301,23 @@ The main MARKs for splitting the code into logically related blocks and their se
 
 // MARK: - Lifecycle
 
+// MARK: - View life cycle
+
+// MARK: - Object life cycle
+
 // MARK: - Public Methods
 
 // MARK: - Private Methods
 
 // MARK: - IBActions
+
+// MARK: - Actions
+
+// MARK: - Application Shortcut Support
+
+// MARK: - Segue preparation
+
+// MARK: - Table view data source
 
 ```
 
@@ -1164,3 +1177,12 @@ private func respondToSwipeGesture(gesture: UIGestureRecognizer) {
 }
 
 ```
+
+
+### Add Home Screen Quick Actions
+
+Expose commonly used functionality with static or dynamic 3D Touch Home Screen quick actions.
+
+[Documentation](https://developer.apple.com/documentation/uikit/menus_and_shortcuts/add_home_screen_quick_actions)
+
+<img src="https://github.com/lgreydev/Help/blob/master/Screenshots/home-screen-quick-actions.jpeg" width="600">

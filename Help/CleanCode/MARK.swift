@@ -21,10 +21,20 @@ import Foundation
 
 // MARK: - Lifecycle
 
+// MARK: - View life cycle
+
+// MARK: - Object life cycle
+
 // MARK: - Public Methods
 
 // MARK: - Private Methods
 
 // MARK: - IBActions
 
+// MARK: - Actions
 
+// MARK: - Application Shortcut Support
+
+// MARK: - Segue preparation
+
+// MARK: - Table view data source
