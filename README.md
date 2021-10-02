@@ -1197,3 +1197,15 @@ Expose commonly used functionality with static or dynamic 3D Touch Home Screen q
 [Documentation](https://developer.apple.com/documentation/uikit/menus_and_shortcuts/add_home_screen_quick_actions)
 
 <img src="https://github.com/lgreydev/Help/blob/master/Screenshots/home-screen-quick-actions.jpeg" width="600">
+
+
+### 🛡️ License
+
+This project is licensed under the MIT License - see the [`LICENSE`](LICENSE) file for details.
+
+### 🙏 Support
+
+This project needs a ⭐️ from you. Don't forget to leave a star ⭐️
+
+### 😎 Contributing
+Sergey Lukaschuk ✉️ s.lukaschuk@yahoo.com

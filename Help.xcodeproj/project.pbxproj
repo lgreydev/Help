@@ -47,6 +47,7 @@
 		5EAC92C026BC0E4D00A6198C /* Destination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EAC92BF26BC0E4D00A6198C /* Destination.swift */; };
 		5EAC92C726BD35E700A6198C /* SaveAndLoadDataOnDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EAC92C626BD35E700A6198C /* SaveAndLoadDataOnDevice.swift */; };
 		5EAF0B81268C5F4300D92322 /* LaunchScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EAF0B80268C5F4300D92322 /* LaunchScreen.swift */; };
+		5ED4FE63270920F700E3B850 /* License in Resources */ = {isa = PBXBuildFile; fileRef = 5ED4FE62270920F700E3B850 /* License */; };
 		5EDE65CE26E29E0000DB71C0 /* SwipeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EDE65CD26E29E0000DB71C0 /* SwipeScreen.swift */; };
 		5EF5E01526F72FE40068A717 /* EnumDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EF5E01426F72FE40068A717 /* EnumDataModel.swift */; };
 /* End PBXBuildFile section */
@@ -94,6 +95,7 @@
 		5EAC92BF26BC0E4D00A6198C /* Destination.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Destination.swift; sourceTree = "<group>"; };
 		5EAC92C626BD35E700A6198C /* SaveAndLoadDataOnDevice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveAndLoadDataOnDevice.swift; sourceTree = "<group>"; };
 		5EAF0B80268C5F4300D92322 /* LaunchScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreen.swift; sourceTree = "<group>"; };
+		5ED4FE62270920F700E3B850 /* License */ = {isa = PBXFileReference; lastKnownFileType = text; path = License; sourceTree = "<group>"; };
 		5EDE65CD26E29E0000DB71C0 /* SwipeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeScreen.swift; sourceTree = "<group>"; };
 		5EF5E01426F72FE40068A717 /* EnumDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnumDataModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -141,6 +143,7 @@
 				5E2CF7C2266E23D7007BB2EB /* Screenshots */,
 				5E8385702667681600ACA770 /* README.md */,
 				5E83856E266767D600ACA770 /* .gitignore */,
+				5ED4FE62270920F700E3B850 /* License */,
 				5E8385512667635000ACA770 /* Help */,
 				5E8385502667635000ACA770 /* Products */,
 			);
@@ -318,6 +321,7 @@
 				5E83855F2667635400ACA770 /* LaunchScreen.storyboard in Resources */,
 				5E8385712667681600ACA770 /* README.md in Resources */,
 				5E83855C2667635400ACA770 /* Assets.xcassets in Resources */,
+				5ED4FE63270920F700E3B850 /* License in Resources */,
 				5E83855A2667635000ACA770 /* Main.storyboard in Resources */,
 				5E2CF7C6266E242E007BB2EB /* segue-001.png in Resources */,
 			);
