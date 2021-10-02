@@ -10,6 +10,7 @@ In this project, I have collected various best practices and iOS development tip
     - [Logically Related Elements](#logically-related-elements)
     - [Dead Code](#dead-code)
     - [Main MARKs](#main-marks)
+    - [Semantic Commit](#semantic-commit)
     
 - [**Protocols**](#protocols)
     - [CustomStringConvertible](#customstringconvertible)
@@ -320,6 +321,16 @@ The main MARKs for splitting the code into logically related blocks and their se
 // MARK: - Table view data source
 
 ```
+
+### [Semantic Commit]
+
+- `feat`: (new feature for the user, not a new feature for build script)
+- `fix`: (bug fix for the user, not a fix to a build script)
+- `docs`: (changes to the documentation)
+- `style`: (formatting, missing semi colons, etc; no production code change)
+- `refactor`: (refactoring production code, eg. renaming a variable)
+- `test`: (adding missing tests, refactoring tests; no production code change)
+- `chore`: (updating grunt tasks etc; no production code change) `chore: release v0.5.3'`
 
 
 ## **Protocols**
