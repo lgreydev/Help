@@ -1201,7 +1201,7 @@ Expose commonly used functionality with static or dynamic 3D Touch Home Screen q
 
 ### 🛡️ License
 
-This project is licensed under the MIT License - see the [`LICENSE`](LICENSE) file for details.
+This project is licensed under the MIT License - see the [`LICENSE`](https://github.com/lgreydev/Help/blob/master/License) file for details.
 
 ### 🙏 Support
 
