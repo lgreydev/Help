@@ -33,7 +33,7 @@ In this project, I have collected various best practices and iOS development tip
 
 - [**UIKit**](#uikit)
     - [UITextField](#uitextfield)
-        -[Dismiss Keyboard](#dismiss-keyboard)
+        - [Dismiss Keyboard](#dismiss-keyboard)
     - [Data Manager](#data-manager)
         - [Save and Load Data on Device](#save-and-load-data-on-device)
     - [Table View](#table-view)
