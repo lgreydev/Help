@@ -32,6 +32,8 @@ In this project, I have collected various best practices and iOS development tip
 
 
 - [**UIKit**](#uikit)
+    - [UITextField](#uitextfield)
+        -[Dismiss Keyboard](#dismiss-keyboard)
     - [Data Manager](#data-manager)
         - [Save and Load Data on Device](#save-and-load-data-on-device)
     - [Table View](#table-view)
@@ -740,6 +742,30 @@ showTower(for: difficulty ?? .unknown)
 
 
 ## **UIKit**
+
+## UITextField
+
+### [Dismiss Keyboard](https://github.com/lgreydev/Help/blob/master/Help/UIKit/UITextField/DismissKeyboard.swift)
+
+```swift
+
+class DismissKeyboard: UIViewController {
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        // When user touch on screen
+        let tap = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))
+        self.view.addGestureRecognizer(tap)
+    }
+    
+    // Dismiss keyboard
+    @objc private func dismissKeyboard() {
+        self.view.endEditing(true)
+    }
+}
+
+```
 
 ## Data Manager
 
