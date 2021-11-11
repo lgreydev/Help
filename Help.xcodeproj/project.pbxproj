@@ -40,7 +40,7 @@
 		5E83858D2667D3C400ACA770 /* TypeCasting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E83858C2667D3C400ACA770 /* TypeCasting.swift */; };
 		5E84F23B26FC424B00BA06D3 /* home-screen-quick-actions.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 5E84F23A26FC424B00BA06D3 /* home-screen-quick-actions.jpeg */; };
 		5E88DEA9273C85D700363BF6 /* DismissKeyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E88DEA8273C85D700363BF6 /* DismissKeyboard.swift */; };
-		5E88DEAC273D3C5800363BF6 /* String+CompareNumbers .swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E88DEAB273D3C5800363BF6 /* String+CompareNumbers .swift */; };
+		5E88DEAC273D3C5800363BF6 /* String+CompareNumbers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E88DEAB273D3C5800363BF6 /* String+CompareNumbers.swift */; };
 		5EAC17F826807D1C006EC7CD /* PassDataDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EAC17F726807D1C006EC7CD /* PassDataDelegate.swift */; };
 		5EAC17FA26808458006EC7CD /* PassDataClosure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EAC17F926808458006EC7CD /* PassDataClosure.swift */; };
 		5EAC92BA26BA8D0D00A6198C /* MoveRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EAC92B926BA8D0D00A6198C /* MoveRow.swift */; };
@@ -90,7 +90,7 @@
 		5E83858C2667D3C400ACA770 /* TypeCasting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeCasting.swift; sourceTree = "<group>"; };
 		5E84F23A26FC424B00BA06D3 /* home-screen-quick-actions.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "home-screen-quick-actions.jpeg"; sourceTree = "<group>"; };
 		5E88DEA8273C85D700363BF6 /* DismissKeyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DismissKeyboard.swift; sourceTree = "<group>"; };
-		5E88DEAB273D3C5800363BF6 /* String+CompareNumbers .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+CompareNumbers .swift"; sourceTree = "<group>"; };
+		5E88DEAB273D3C5800363BF6 /* String+CompareNumbers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+CompareNumbers.swift"; sourceTree = "<group>"; };
 		5EAC17F726807D1C006EC7CD /* PassDataDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassDataDelegate.swift; sourceTree = "<group>"; };
 		5EAC17F926808458006EC7CD /* PassDataClosure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassDataClosure.swift; sourceTree = "<group>"; };
 		5EAC92B926BA8D0D00A6198C /* MoveRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoveRow.swift; sourceTree = "<group>"; };
@@ -217,7 +217,7 @@
 			isa = PBXGroup;
 			children = (
 				5E8385852667BE7500ACA770 /* Int+Random.swift */,
-				5E88DEAB273D3C5800363BF6 /* String+CompareNumbers .swift */,
+				5E88DEAB273D3C5800363BF6 /* String+CompareNumbers.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -352,7 +352,7 @@
 				5E8385862667BE7500ACA770 /* Int+Random.swift in Sources */,
 				5EAC92C726BD35E700A6198C /* SaveAndLoadDataOnDevice.swift in Sources */,
 				5E2CF7C8266E61A0007BB2EB /* PrepareSegue.swift in Sources */,
-				5E88DEAC273D3C5800363BF6 /* String+CompareNumbers .swift in Sources */,
+				5E88DEAC273D3C5800363BF6 /* String+CompareNumbers.swift in Sources */,
 				5E83857B2667814000ACA770 /* LogicallyRelatedElements.swift in Sources */,
 				5EAC92C026BC0E4D00A6198C /* Destination.swift in Sources */,
 				5EAC92BA26BA8D0D00A6198C /* MoveRow.swift in Sources */,

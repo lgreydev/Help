@@ -18,8 +18,8 @@ In this project, I have collected various best practices and iOS development tip
     - [Comparable](#comparable)
     
 - [**Extensions**](#extensions)
-    - [Int+Random](#int+random)
-    - [String+CompareNumbers](#string+compareNumbers)
+    - [Int+Random](#int-random)
+    - [String+CompareNumbers](#string-compare-numbers)
 
 - [**Working Code**](#working-code)
     - [Error Handling](#error-handling)
@@ -427,7 +427,7 @@ mike > bob // true
 ## **Extensions**
 
 
-### [Int+Random](https://github.com/lgreydev/Help/blob/master/Help/Extensions/Int+Random.swift)
+### [Int Random](https://github.com/lgreydev/Help/blob/master/Help/Extensions/Int+Random.swift)
 An extension for Int that returns a random number works with range  of numbers. Negative numbers converts to positive.
 - **Example:** 17.random will return 0 to 17 (not including 17).
 - **Example:** -5.random, -5 convert to 5, will return 0 to 5 (not including 5).
@@ -450,7 +450,7 @@ extension Int {
 ```
 
 
-### [String+CompareNumbers](https://github.com/lgreydev/Help/blob/master/Help/Extensions/String+CompareNumbers.swift)
+### [String Compare Numbers](https://github.com/lgreydev/Help/blob/master/Help/Extensions/String+CompareNumbers.swift)
 
 ```swift
 
