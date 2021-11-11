@@ -450,7 +450,7 @@ extension Int {
 ```
 
 
-### [String+CompareNumbers](https://github.com/lgreydev/Help/blob/master/Help/Extensions/String+CompareNumbers .swift)
+### [String+CompareNumbers](https://github.com/lgreydev/Help/blob/master/Help/Extensions/String+CompareNumbers.swift)
 
 ```swift
 
