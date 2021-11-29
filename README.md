@@ -11,6 +11,7 @@ In this project, I have collected various best practices and iOS development tip
     - [Dead Code](#dead-code)
     - [Main MARKs](#main-marks)
     - [Semantic Commit](#semantic-commit)
+    - [Shortcuts](#shortcut)
     
 - [**Protocols**](#protocols)
     - [CustomStringConvertible](#customstringconvertible)
@@ -334,6 +335,18 @@ The main MARKs for splitting the code into logically related blocks and their se
 - `refactor`: (refactoring production code, eg. renaming a variable)
 - `test`: (adding missing tests, refactoring tests; no production code change)
 - `chore`: (updating grunt tasks etc; no production code change) `chore: release v0.5.3'`
+
+
+### [Shortcut]
+
+- Build: `⌘ + B`
+- Run: `⌘ + R
+- Test: `⌘ + U
+- Stop: `⌘ + .
+- Clean: `⌘ + ⇧ + K
+- Open quickly: `⇧ + ⌘ + O`
+- Code completion: `⌃ + Space`
+
 
 
 ## **Protocols**
