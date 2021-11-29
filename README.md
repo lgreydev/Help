@@ -326,7 +326,7 @@ The main MARKs for splitting the code into logically related blocks and their se
 
 ```
 
-### [Semantic Commit]
+### Semantic Commit
 
 - `feat`: (new feature for the user, not a new feature for build script)
 - `fix`: (bug fix for the user, not a fix to a build script)
@@ -337,15 +337,24 @@ The main MARKs for splitting the code into logically related blocks and their se
 - `chore`: (updating grunt tasks etc; no production code change) `chore: release v0.5.3'`
 
 
-### [Shortcut]
+### Shortcut
 
 - Build: `⌘ + B`
-- Run: `⌘ + R
-- Test: `⌘ + U
-- Stop: `⌘ + .
-- Clean: `⌘ + ⇧ + K
+- Run: `⌘ + R`
+- Test: `⌘ + U`
+- Stop: `⌘ + .`
+- Clean: `⌘ + ⇧ + K`
 - Open quickly: `⇧ + ⌘ + O`
 - Code completion: `⌃ + Space`
+- Opening a file: `⇧ + ⌘ + O`
+- Navigation: `⇧ + ⌘ + J`
+- Jump to Definition: `⌃ + ⌘ + J`
+- Multiple Cursors: `⌥ + ⌘ + E`
+- All Refactor: `⌃ + ⌘ + E`
+- Reorder Statements: `⌘ + ⌥ + ( ] or [ )`
+- Open Inspectors: `⌥ + ⌘ + 0`
+- Open Navigation: `⌘ + 0`
+
 
 
 
