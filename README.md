@@ -306,9 +306,11 @@ The main MARKs for splitting the code into logically related blocks and their se
 
 // MARK: - Lifecycle
 
-// MARK: - View life cycle
+// MARK: - View Life Cycle
 
-// MARK: - Object life cycle
+// MARK: - Object Life Cycle
+
+// MARK: - Navigation
 
 // MARK: - Public Methods
 
@@ -354,7 +356,6 @@ The main MARKs for splitting the code into logically related blocks and their se
 - Reorder Statements: `⌘ + ⌥ + ( ] or [ )`
 - Open Inspectors: `⌥ + ⌘ + 0`
 - Open Navigation: `⌘ + 0`
-
 
 
 
