@@ -9,8 +9,6 @@ import Foundation
 
 
 // MARK:  Dictionary Reduce
-
-
 let fruits = ["🍏", "🍓", "🍒", "🍌", "🍏", "🍒", "🍌", "🍌", "🍌", "🍒", "🍒", "🍌", "🍓", "🍓"]
 
 let fruitsCount = fruits.reduce(into: [:]) { counts, fruit in
@@ -24,7 +22,6 @@ let fruitsCount = fruits.reduce(into: [:]) { counts, fruit in
 
 
 // MARK: Dictionary Search List
-
 struct Product: Hashable {
     let id: String; // unique identifier
     let name: String;
