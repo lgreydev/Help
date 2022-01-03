@@ -739,7 +739,7 @@ print(newArray)
 
 
 ### [Dictionary](https://github.com/lgreydev/Help/blob/master/Help/WorkingCode/Dictionary.swift)
-[documentation](https://developer.apple.com/documentation/swift/array/3126956-reduce)
+[reduce(into:_:)](https://developer.apple.com/documentation/swift/array/3126956-reduce)
 
 **Dictionary Reduce**
 
@@ -759,8 +759,10 @@ fruitsCount // ["🍒": 4, "🍏": 2, "🍓": 3, "🍌": 5]
 ```
 
 **Dictionary Search List**
+[updateValue(_:forKey:)](https://developer.apple.com/documentation/swift/dictionary/3127179-updatevalue)
+[removeValue(forKey:)](https://developer.apple.com/documentation/swift/dictionary/1641348-removevalue)
 
-```
+```swift
 struct Product: Hashable {
     let id: String; // unique identifier
     let name: String;
