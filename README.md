@@ -29,7 +29,7 @@ In this project, I have collected various best practices and iOS development tip
     - [Guard](#guard)
     - [Array Enumerated](#array-enumerated)
     - [Array Zip](#array-zip)
-    - [Dictionary Reduce](#dictionary-reduce)
+    - [Dictionary](#dictionary)
     - [Enum Data Model](#enum-data-model)
 
 
@@ -738,8 +738,10 @@ print(newArray)
 ```
 
 
-### [Dictionary Reduce](https://github.com/lgreydev/Help/blob/master/Help/WorkingCode/DictionaryReduce.swift)
+### [Dictionary](https://github.com/lgreydev/Help/blob/master/Help/WorkingCode/Dictionary.swift)
 [documentation](https://developer.apple.com/documentation/swift/array/3126956-reduce)
+
+**Dictionary Reduce**
 
 Returns the result of combining the elements of the sequence using the given closure.
 
@@ -755,6 +757,80 @@ fruitsCount // ["🍒": 4, "🍏": 2, "🍓": 3, "🍌": 5]
 // [String : Int]
 
 ```
+
+**Dictionary Search List**
+
+```
+struct Product: Hashable {
+    let id: String; // unique identifier
+    let name: String;
+    let producer: String;
+
+    static func ==(lhs: Product, rhs: Product) -> Bool {
+        return lhs.id == rhs.id
+    }
+}
+
+protocol Library {
+    /**
+     Adds a new product object to the Library.
+     - Parameter product: product to add to the Library
+     - Returns: false if the product with same id already exists in the Library, true – otherwise.
+    */
+    func addNewProduct(product: Product) -> Bool;
+    
+    /**
+     Deletes the product with the specified id from the Library.
+     - Returns: true if the product with same id existed in the Library, false – otherwise.
+    */
+    func deleteProduct(id: String) -> Bool;
+    
+    /**
+     - Returns: 10 product names containing the specified string. If there are several products with the same name, producer's name is appended to product's name.
+    */
+    func listProductsByName(searchString: String) -> Set<String>;
+    
+    /**
+     - Returns: 10 product names whose producer contains the specified string, ordered by producers.
+    */
+    func listProductsByProducer(searchString: String) -> [String];
+}
+
+class LibraryRepository: Library {
+    private var products = [String: Product]()
+
+    func addNewProduct(product: Product) -> Bool {
+        return self.products.updateValue(product, forKey: product.id) == nil
+    }
+
+    func deleteProduct(id: String) -> Bool {
+        return self.products.removeValue(forKey: id) != nil
+    }
+
+    func listProductsByName(searchString: String) -> Set<String> {
+        return self.products
+            .filter({ $1.name.contains(searchString) })
+            .prefix(10)
+            .reduce(into: Set<String>()) { (productNames, product) in
+                if products.filter({ $1.name == product.value.name }).count > 1 {
+                    productNames.insert("\(product.value.producer) - \(product.value.name)")
+                    return
+                }
+                productNames.insert(product.value.name)
+            }
+    }
+
+    func listProductsByProducer(searchString: String) -> [String] {
+        return self.products
+            .filter({ $1.producer.contains(searchString) })
+            .sorted(by: { $0.value.producer > $1.value.producer })
+            .prefix(10)
+            .map { $0.value.name }
+    }
+}
+```
+
+
 
 ### [Enum Data Model](https://github.com/lgreydev/Help/blob/master/Help/WorkingCode/EnumDataModel.swift)
 

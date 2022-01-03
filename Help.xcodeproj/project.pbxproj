@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		5E023E89268364C3002465D8 /* ArrayEnumerated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E023E88268364C3002465D8 /* ArrayEnumerated.swift */; };
 		5E023E8B2683692F002465D8 /* ArrayZip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E023E8A2683692F002465D8 /* ArrayZip.swift */; };
-		5E023E8F26863070002465D8 /* DictionaryReduce.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E023E8E26863070002465D8 /* DictionaryReduce.swift */; };
+		5E023E8F26863070002465D8 /* Dictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E023E8E26863070002465D8 /* Dictionary.swift */; };
 		5E2CF7C1266E20AE007BB2EB /* UnwindSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E2CF7C0266E20AE007BB2EB /* UnwindSegue.swift */; };
 		5E2CF7C5266E242E007BB2EB /* segue-002.png in Resources */ = {isa = PBXBuildFile; fileRef = 5E2CF7C3266E242E007BB2EB /* segue-002.png */; };
 		5E2CF7C6266E242E007BB2EB /* segue-001.png in Resources */ = {isa = PBXBuildFile; fileRef = 5E2CF7C4266E242E007BB2EB /* segue-001.png */; };
@@ -57,7 +57,7 @@
 /* Begin PBXFileReference section */
 		5E023E88268364C3002465D8 /* ArrayEnumerated.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayEnumerated.swift; sourceTree = "<group>"; };
 		5E023E8A2683692F002465D8 /* ArrayZip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayZip.swift; sourceTree = "<group>"; };
-		5E023E8E26863070002465D8 /* DictionaryReduce.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryReduce.swift; sourceTree = "<group>"; };
+		5E023E8E26863070002465D8 /* Dictionary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dictionary.swift; sourceTree = "<group>"; };
 		5E2CF7C0266E20AE007BB2EB /* UnwindSegue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnwindSegue.swift; sourceTree = "<group>"; };
 		5E2CF7C3266E242E007BB2EB /* segue-002.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "segue-002.png"; sourceTree = "<group>"; };
 		5E2CF7C4266E242E007BB2EB /* segue-001.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "segue-001.png"; sourceTree = "<group>"; };
@@ -231,7 +231,7 @@
 				5E72DD5D266A76EE00A8E543 /* Guard.swift */,
 				5E023E88268364C3002465D8 /* ArrayEnumerated.swift */,
 				5E023E8A2683692F002465D8 /* ArrayZip.swift */,
-				5E023E8E26863070002465D8 /* DictionaryReduce.swift */,
+				5E023E8E26863070002465D8 /* Dictionary.swift */,
 				5EF5E01426F72FE40068A717 /* EnumDataModel.swift */,
 			);
 			path = WorkingCode;
@@ -361,7 +361,7 @@
 				5E8385802667B63900ACA770 /* MARK.swift in Sources */,
 				5EAC17FA26808458006EC7CD /* PassDataClosure.swift in Sources */,
 				5EAC92BE26BC0BCD00A6198C /* Source.swift in Sources */,
-				5E023E8F26863070002465D8 /* DictionaryReduce.swift in Sources */,
+				5E023E8F26863070002465D8 /* Dictionary.swift in Sources */,
 				5EAF0B81268C5F4300D92322 /* LaunchScreen.swift in Sources */,
 				5E8385572667635000ACA770 /* ViewController.swift in Sources */,
 				5E66D43626694663001CB8F0 /* FailableInitializers.swift in Sources */,
