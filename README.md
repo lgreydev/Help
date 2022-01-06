@@ -57,6 +57,11 @@ In this project, I have collected various best practices and iOS development tip
    - [Add Home Screen Quick Actions](#add-home-screen-quick-actions)
     
 
+- [**Design Patterns**](#design-patterns)
+    - [Factory method](factory-method)
+
+
+
 ## **Clean Code**
 Raising code readability in iOS development. Thanks to the application of these tips, your code will become readable, which will further ensure convenience and speed of working with it.
 
@@ -1347,6 +1352,20 @@ private func respondToSwipeGesture(gesture: UIGestureRecognizer) {
 }
 
 ```
+
+
+
+## **Design Patterns**
+[Book Design Patterns](https://en.wikipedia.org/wiki/Design_Patterns)
+
+
+
+### [Factory Method](https://github.com/lgreydev/Help/blob/master/Help/DesignPatterns/FactoryMethod.swift)
+[Factory Method RU](https://refactoring.guru/ru/design-patterns/factory-method)
+
+
+
+
 
 
 ### Add Home Screen Quick Actions
