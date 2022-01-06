@@ -8,8 +8,7 @@
 import Foundation
 import UIKit
 
-// structure
-
+// structure Factory Method
 // MARK: Creator
 final class FactoryExercises {
     
