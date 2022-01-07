@@ -1367,7 +1367,7 @@ private func respondToSwipeGesture(gesture: UIGestureRecognizer) {
 
 // structure Factory Method
 // MARK: Creator
-final class FactoryExercises {
+class FactoryExercises {
     
     static let defaultFactory = FactoryExercises()
     

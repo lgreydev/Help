@@ -10,7 +10,7 @@ import UIKit
 
 // structure Factory Method
 // MARK: Creator
-final class FactoryExercises {
+class FactoryExercises {
     
     static let defaultFactory = FactoryExercises()
     
