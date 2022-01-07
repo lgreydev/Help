@@ -1367,62 +1367,53 @@ private func respondToSwipeGesture(gesture: UIGestureRecognizer) {
 
 // structure Factory Method
 // MARK: Creator
-class FactoryExercises {
+class FactoryProducts {
     
-    static let defaultFactory = FactoryExercises()
+    static let defaultFactory = FactoryProducts()
     
-    func createExercise(name: Exercises) -> Exercise {
-        switch name {
-        case .jumping: return Jumping()
-        case .running: return Running()
+    func createProduct(_ product: Products) -> Product {
+        switch product {
+        case .productA: return ConcreteProductA()
+        case .productB: return ConcreteProductB()
         }
     }
     
     private init() {}
 }
 
-enum Exercises {
-    case jumping
-    case running
+enum Products {
+    case productA
+    case productB
 }
 
 // MARK: Product Interface
-protocol Exercise {
+protocol Product {
+    var id: String { get }
     var name: String { get }
-    var type: String { get }
     
-    func start()
-    func stop()
+    func printProduct()
 }
 
 
 // MARK: Product A
-class Jumping: Exercise {
+class ConcreteProductA: Product {
     
-    var name: String = "Jumping"
-    var type: String = "Exercise for legs"
+    var name: String = "Product A"
+    var id: String = "1"
     
-    func start() {
-        print("Start exercise for legs")
-    }
-    
-    func stop() {
-        print("Stop exercise for legs")
+    func printProduct() {
+        print("id: \(id), name: \(name)")
     }
 }
 
 // MARK: Product B
-class Running: Exercise {
+class ConcreteProductB: Product {
     
-    var name: String = "Running"
-    var type: String = "Exercise for running"
+    var name: String = "Product B"
+    var id: String = "2"
     
-    func start() {
-        print("Start exercise for running")
-    }
-    
-    func stop() {
-        print("Stop exercise for running")
+    func printProduct() {
+        print("id: \(id), name: \(name)")
     }
 }
 
@@ -1430,35 +1421,25 @@ class Running: Exercise {
 // MARK: Implementation
 class SomeViewController: UIViewController {
     
-    var workout: [Exercise] = []
+    var products: [Product] = []
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        addExercise(.jumping)
-        addExercise(.running)
-        myWorkout()
-        startWorkout()
-        stopWorkout()
+        addProduct(.productA)
+        addProduct(.productB)
+        allProducts()
     }
     
-    func addExercise(_ exercise: Exercises) {
-        let newExercise = FactoryExercises.defaultFactory.createExercise(name: exercise)
-        workout.append(newExercise)
+    func addProduct(_ product: Products) {
+        let newProduct = FactoryProducts.defaultFactory.createProduct(product)
+        products.append(newProduct)
     }
     
-    func myWorkout() {
-        workout.forEach { print($0.name) }
+    func allProducts() {
+        products.forEach { $0.printProduct() }
     }
-
-    func startWorkout() {
-        workout.forEach { $0.start() }
-    }
-    
-    func stopWorkout() {
-        workout.forEach { $0.stop() }
-    }
-    
 }
+
 
 ```
 
