@@ -61,6 +61,9 @@ In this project, I have collected various best practices and iOS development tip
     - [Factory Method](#factory-method)
 
 
+- [**Leet Code**](#leet-code)
+    - [Pascal's Triangle](#pascal's-triangle)
+
 
 ## **Clean Code**
 Raising code readability in iOS development. Thanks to the application of these tips, your code will become readable, which will further ensure convenience and speed of working with it.
@@ -1440,6 +1443,54 @@ class SomeViewController: UIViewController {
     }
 }
 
+
+```
+
+
+
+## **Leet Code**
+
+
+
+### [Pascal's Triangle](https://github.com/lgreydev/Help/blob/master/Help/LeetCode/Pascal'sTriangle.swift)
+ 
+ Given an integer numRows, return the first numRows of Pascal's triangle.
+ In Pascal's triangle, each number is the sum of the two numbers directly above it as shown:
+ 
+ **Example 1:**
+ Input: numRows = 5
+ Output: [[1],[1,1],[1,2,1],[1,3,3,1],[1,4,6,4,1]]
+ 
+ **Example 2:**
+ Input: numRows = 1
+ Output: [[1]]
+
+
+
+``` swift
+
+func generate(_ numRows: Int) -> [[Int]] {
+    
+    guard numRows > 0 else { return [] }
+    if numRows == 1 { return [[1]] }
+    
+    var results = [[Int]]()
+    results.append([1])
+    
+    for x in 1..<numRows {
+        var newRow = [1]
+        let prevRow = results[x - 1]
+        
+        for j in 1..<prevRow.count {
+            let sum = prevRow[j] + prevRow[j - 1]
+            newRow.append(sum)
+        }
+        newRow.append(1)
+        results.append(newRow)
+    }
+
+    return results
+}
 
 ```
 
