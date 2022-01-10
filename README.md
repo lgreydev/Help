@@ -62,7 +62,7 @@ In this project, I have collected various best practices and iOS development tip
 
 
 - [**Leet Code**](#leet-code)
-    - [Pascal's Triangle](#pascal's-triangle)
+    - [Pascal Triangle](#pascal-triangle)
 
 
 ## **Clean Code**
@@ -1452,7 +1452,7 @@ class SomeViewController: UIViewController {
 
 
 
-### [Pascal's Triangle](https://github.com/lgreydev/Help/blob/master/Help/LeetCode/Pascal'sTriangle.swift)
+### [Pascal Triangle](https://github.com/lgreydev/Help/blob/master/Help/LeetCode/Pascal'sTriangle.swift)
  
   Given an integer numRows, return the first numRows of Pascal's triangle.<br>
  In Pascal's triangle, each number is the sum of the two numbers directly above it as shown: <br>
