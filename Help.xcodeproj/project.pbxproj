@@ -21,6 +21,7 @@
 		5E5FE82426959E5100C5A396 /* Equatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5FE82326959E5100C5A396 /* Equatable.swift */; };
 		5E5FE8262695A27B00C5A396 /* Comparable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5FE8252695A27B00C5A396 /* Comparable.swift */; };
 		5E66D43626694663001CB8F0 /* FailableInitializers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E66D43526694663001CB8F0 /* FailableInitializers.swift */; };
+		5E709213278CA0BA0060FB31 /* PascalTriangleAnimated2.gif in Resources */ = {isa = PBXBuildFile; fileRef = 5E709212278CA0BA0060FB31 /* PascalTriangleAnimated2.gif */; };
 		5E72DD5E266A76EE00A8E543 /* Guard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E72DD5D266A76EE00A8E543 /* Guard.swift */; };
 		5E8385532667635000ACA770 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E8385522667635000ACA770 /* AppDelegate.swift */; };
 		5E8385552667635000ACA770 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E8385542667635000ACA770 /* SceneDelegate.swift */; };
@@ -71,6 +72,7 @@
 		5E5FE82326959E5100C5A396 /* Equatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Equatable.swift; sourceTree = "<group>"; };
 		5E5FE8252695A27B00C5A396 /* Comparable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comparable.swift; sourceTree = "<group>"; };
 		5E66D43526694663001CB8F0 /* FailableInitializers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FailableInitializers.swift; sourceTree = "<group>"; };
+		5E709212278CA0BA0060FB31 /* PascalTriangleAnimated2.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = PascalTriangleAnimated2.gif; sourceTree = "<group>"; };
 		5E72DD5D266A76EE00A8E543 /* Guard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Guard.swift; sourceTree = "<group>"; };
 		5E83854F2667635000ACA770 /* Help.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Help.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E8385522667635000ACA770 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -158,6 +160,7 @@
 				5E2CF7C4266E242E007BB2EB /* segue-001.png */,
 				5E2CF7C3266E242E007BB2EB /* segue-002.png */,
 				5E84F23A26FC424B00BA06D3 /* home-screen-quick-actions.jpeg */,
+				5E709212278CA0BA0060FB31 /* PascalTriangleAnimated2.gif */,
 			);
 			path = Screenshots;
 			sourceTree = "<group>";
@@ -357,6 +360,7 @@
 				5E83855F2667635400ACA770 /* LaunchScreen.storyboard in Resources */,
 				5E8385712667681600ACA770 /* README.md in Resources */,
 				5E83855C2667635400ACA770 /* Assets.xcassets in Resources */,
+				5E709213278CA0BA0060FB31 /* PascalTriangleAnimated2.gif in Resources */,
 				5ED4FE63270920F700E3B850 /* License in Resources */,
 				5E83855A2667635000ACA770 /* Main.storyboard in Resources */,
 				5E2CF7C6266E242E007BB2EB /* segue-001.png in Resources */,
