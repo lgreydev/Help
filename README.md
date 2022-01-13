@@ -1501,7 +1501,7 @@ func generate(_ numRows: Int) -> [[Int]] {
   
   Given an m x n matrix, return all elements of the matrix in spiral order.<br>
  
- <img src="https://github.com/lgreydev/Help/blob/master/Screenshots/spiral.jpg" width="350"><img src="https://github.com/lgreydev/Help/blob/master/Screenshots/spiral1.jpg" width="350">
+ <img src="https://github.com/lgreydev/Help/blob/master/Screenshots/spiral1.jpg" width="350"><img src="https://github.com/lgreydev/Help/blob/master/Screenshots/spiral.jpg" width="350">
  
  **Example 1:**<br>
  *Input:* `matrix = [[1,2,3],[4,5,6],[7,8,9]]`<br>
