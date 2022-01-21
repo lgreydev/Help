@@ -57,6 +57,7 @@
 		5EAF0B81268C5F4300D92322 /* LaunchScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EAF0B80268C5F4300D92322 /* LaunchScreen.swift */; };
 		5ED4FE63270920F700E3B850 /* License in Resources */ = {isa = PBXBuildFile; fileRef = 5ED4FE62270920F700E3B850 /* License */; };
 		5EDBDABA279B5C5B006DF495 /* ContainerWithMostWater.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EDBDAB9279B5C5B006DF495 /* ContainerWithMostWater.swift */; };
+		5EDBDABC279B5DFB006DF495 /* ContainerWithMostWater.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5EDBDABB279B5DFB006DF495 /* ContainerWithMostWater.jpg */; };
 		5EDE65CE26E29E0000DB71C0 /* SwipeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EDE65CD26E29E0000DB71C0 /* SwipeScreen.swift */; };
 		5EF5E01526F72FE40068A717 /* EnumDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EF5E01426F72FE40068A717 /* EnumDataModel.swift */; };
 /* End PBXBuildFile section */
@@ -114,6 +115,7 @@
 		5EAF0B80268C5F4300D92322 /* LaunchScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreen.swift; sourceTree = "<group>"; };
 		5ED4FE62270920F700E3B850 /* License */ = {isa = PBXFileReference; lastKnownFileType = text; path = License; sourceTree = "<group>"; };
 		5EDBDAB9279B5C5B006DF495 /* ContainerWithMostWater.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerWithMostWater.swift; sourceTree = "<group>"; };
+		5EDBDABB279B5DFB006DF495 /* ContainerWithMostWater.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ContainerWithMostWater.jpg; sourceTree = "<group>"; };
 		5EDE65CD26E29E0000DB71C0 /* SwipeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeScreen.swift; sourceTree = "<group>"; };
 		5EF5E01426F72FE40068A717 /* EnumDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnumDataModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -173,6 +175,7 @@
 				5E2CF7C3266E242E007BB2EB /* segue-002.png */,
 				5E84F23A26FC424B00BA06D3 /* home-screen-quick-actions.jpeg */,
 				5E709212278CA0BA0060FB31 /* PascalTriangleAnimated2.gif */,
+				5EDBDABB279B5DFB006DF495 /* ContainerWithMostWater.jpg */,
 			);
 			path = Screenshots;
 			sourceTree = "<group>";
@@ -366,6 +369,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5EDBDABC279B5DFB006DF495 /* ContainerWithMostWater.jpg in Resources */,
 				5E2CF7C5266E242E007BB2EB /* segue-002.png in Resources */,
 				5E83856F266767D600ACA770 /* .gitignore in Resources */,
 				5E84F23B26FC424B00BA06D3 /* home-screen-quick-actions.jpeg in Resources */,
