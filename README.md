@@ -1504,13 +1504,13 @@ func generate(_ numRows: Int) -> [[Int]] {
  
  <img src="https://github.com/lgreydev/Help/blob/master/Screenshots/spiral1.jpg" width="350"><img src="https://github.com/lgreydev/Help/blob/master/Screenshots/spiral.jpg" width="350">
  
- **Example 1:**<br>
- *Input:* `matrix = [[1,2,3],[4,5,6],[7,8,9]]`<br>
- *Output:* `[1,2,3,6,9,8,7,4,5]`<br>
+**Example 1:**<br>
+> **Input:** `matrix = [[1,2,3],[4,5,6],[7,8,9]]`<br>
+> **Output:** `[1,2,3,6,9,8,7,4,5]`<br>
  
- **Example 2:**<br>
- *Input:* `matrix = [[1,2,3,4],[5,6,7,8],[9,10,11,12]]`<br>
- *Output:* `[1,2,3,4,8,12,11,10,9,5,6,7]`
+**Example 2:**<br>
+> **Input:** `matrix = [[1,2,3,4],[5,6,7,8],[9,10,11,12]]`<br>
+> **Output:** `[1,2,3,4,8,12,11,10,9,5,6,7]`
 
 ``` swift
 
@@ -1570,18 +1570,18 @@ func spiralOrder(_ matrix: [[Int]]) -> [Int] {
  **Notice** that you may not slant the container.
  
  
- **Example 1:**<br>
+**Example 1:**<br>
  
-  <img src="https://github.com/lgreydev/Help/blob/master/Screenshots/ContainerWithMostWater.jpg" width="350">
+  <img src="https://github.com/lgreydev/Help/blob/master/Screenshots/ContainerWithMostWater.jpg" width="450">
  
  
-> *Input:* `height = [1,8,6,2,5,4,8,3,7]` <br>
-> *Output:* `49` <br>
-> *Explanation:* The above vertical lines are represented by array [1,8,6,2,5,4,8,3,7]. In this case, the max area of water (blue section) the container can contain is 49.
+> **Input:** `height = [1,8,6,2,5,4,8,3,7]` <br>
+> **Output:** `49` <br>
+> **Explanation:** The above vertical lines are represented by array [1,8,6,2,5,4,8,3,7]. In this case, the max area of water (blue section) the container can contain is 49.
  
 **Example 2:**<br>
-> *Input:* `height = [1,1]`<br>
-> *Output:* `1`<br>
+> **Input:** `height = [1,1]`<br>
+> **Output:** `1`<br>
  
 ``` swift
 
