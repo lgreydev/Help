@@ -56,6 +56,7 @@
 		5EAC92C726BD35E700A6198C /* SaveAndLoadDataOnDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EAC92C626BD35E700A6198C /* SaveAndLoadDataOnDevice.swift */; };
 		5EAF0B81268C5F4300D92322 /* LaunchScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EAF0B80268C5F4300D92322 /* LaunchScreen.swift */; };
 		5ED4FE63270920F700E3B850 /* License in Resources */ = {isa = PBXBuildFile; fileRef = 5ED4FE62270920F700E3B850 /* License */; };
+		5EDBDABA279B5C5B006DF495 /* ContainerWithMostWater.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EDBDAB9279B5C5B006DF495 /* ContainerWithMostWater.swift */; };
 		5EDE65CE26E29E0000DB71C0 /* SwipeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EDE65CD26E29E0000DB71C0 /* SwipeScreen.swift */; };
 		5EF5E01526F72FE40068A717 /* EnumDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EF5E01426F72FE40068A717 /* EnumDataModel.swift */; };
 /* End PBXBuildFile section */
@@ -112,6 +113,7 @@
 		5EAC92C626BD35E700A6198C /* SaveAndLoadDataOnDevice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveAndLoadDataOnDevice.swift; sourceTree = "<group>"; };
 		5EAF0B80268C5F4300D92322 /* LaunchScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreen.swift; sourceTree = "<group>"; };
 		5ED4FE62270920F700E3B850 /* License */ = {isa = PBXFileReference; lastKnownFileType = text; path = License; sourceTree = "<group>"; };
+		5EDBDAB9279B5C5B006DF495 /* ContainerWithMostWater.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerWithMostWater.swift; sourceTree = "<group>"; };
 		5EDE65CD26E29E0000DB71C0 /* SwipeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeScreen.swift; sourceTree = "<group>"; };
 		5EF5E01426F72FE40068A717 /* EnumDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnumDataModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -140,6 +142,7 @@
 			children = (
 				5E1F30D5278C9C5E009446ED /* Pascal'sTriangle.swift */,
 				5E4D3FCA278FA2F800A0861A /* SpiralMatrix.swift */,
+				5EDBDAB9279B5C5B006DF495 /* ContainerWithMostWater.swift */,
 			);
 			path = LeetCode;
 			sourceTree = "<group>";
@@ -397,6 +400,7 @@
 				5EAC92BA26BA8D0D00A6198C /* MoveRow.swift in Sources */,
 				5E83856B2667652700ACA770 /* CleanClass.swift in Sources */,
 				5E83857E2667B2A400ACA770 /* DeadCode.swift in Sources */,
+				5EDBDABA279B5C5B006DF495 /* ContainerWithMostWater.swift in Sources */,
 				5E8385802667B63900ACA770 /* MARK.swift in Sources */,
 				5EAC17FA26808458006EC7CD /* PassDataClosure.swift in Sources */,
 				5EAC92BE26BC0BCD00A6198C /* Source.swift in Sources */,
