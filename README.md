@@ -64,6 +64,7 @@ In this project, I have collected various best practices and iOS development tip
 - [**Leet Code**](#leet-code)
     - [Pascal Triangle](#pascal-triangle)
     - [Spiral Matrix](#spiral-matrix)
+    - [Container With Most Water](container-with-most-water)
 
 
 ## **Clean Code**
@@ -1568,21 +1569,19 @@ func spiralOrder(_ matrix: [[Int]]) -> [Int] {
  
  **Notice** that you may not slant the container.
  
- ```
+ 
  **Example 1:**<br>
  
   <img src="https://github.com/lgreydev/Help/blob/master/Screenshots/ContainerWithMostWater.jpg" width="350">
  
  
- *Input:* `height = [1,8,6,2,5,4,8,3,7]` <br>
- *Output:* `49` <br>
- *Explanation:* The above vertical lines are represented by array [1,8,6,2,5,4,8,3,7]. In this case, the max area of water (blue section) the container can contain is 49.
+> *Input:* `height = [1,8,6,2,5,4,8,3,7]` <br>
+> *Output:* `49` <br>
+> *Explanation:* The above vertical lines are represented by array [1,8,6,2,5,4,8,3,7]. In this case, the max area of water (blue section) the container can contain is 49.
  
- **Example 2:**<br>
- *Input:* `height = [1,1]`<br>
- *Output:* `1`<br>
-
-```
+**Example 2:**<br>
+> *Input:* `height = [1,1]`<br>
+> *Output:* `1`<br>
  
 ``` swift
 
