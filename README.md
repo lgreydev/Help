@@ -1630,6 +1630,9 @@ let result = maxArea(input)
 
 ```
 
+**[⬆ Back to Index](#index)**
+
+
 
 ### 🛡️ License
 
