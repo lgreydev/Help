@@ -3,6 +3,8 @@
 
 In this project, I have collected various best practices and iOS development tips. This is my personal development assistant.
 
+## Index
+
 - [**Clean Code**](#clean-code)
     - [Clean Class](#clean-class)
     - [Life Cycle](#life-cycle)
@@ -373,7 +375,6 @@ The main MARKs for splitting the code into logically related blocks and their se
 
 ## **Protocols**
 
-
 ### [CustomStringConvertible](https://github.com/lgreydev/Help/blob/master/Help/Protocols/CustomStringConvertible.swift)
 A type with a customized textual representation.
 Types that conform to the CustomStringConvertible protocol can provide their own representation to be used when converting an instance to a string. The String(describing:) initializer is the preferred way to convert an instance of any type to a string. If the passed instance conforms to CustomStringConvertible, the String(describing:) initializer and the print(_:) function use the instance’s custom description property. Accessing a type’s description property directly or using CustomStringConvertible as a generic constraint is discouraged.
@@ -458,9 +459,11 @@ mike > bob // true
 
 ```
 
+**[⬆ Back to Index](#index)**
+
+
 
 ## **Extensions**
-
 
 ### [IntᐩRandom](https://github.com/lgreydev/Help/blob/master/Help/Extensions/Int+Random.swift)
 An extension for Int that returns a random number works with range  of numbers. Negative numbers converts to positive.
@@ -513,6 +516,9 @@ extension String {
 }
 
 ```
+
+**[⬆ Back to Index](#index)**
+
 
 
 ## **Working Code**
@@ -592,7 +598,6 @@ safari.getImage(text: "page 2")
 safari.getImage(text: "page 3")
 
 ```
-
 
 
 
@@ -884,6 +889,8 @@ showTower(for: difficulty ?? .unknown)
 
 ```
 
+**[⬆ Back to Index](#index)**
+
 
 
 ## **UIKit**
@@ -953,6 +960,10 @@ class SameObject: Codable {
 }
 
 ```
+
+**[⬆ Back to Index](#index)**
+
+
 
 ## Table View
 
@@ -1216,6 +1227,9 @@ class SecondViewController: UIViewController {
 
 ```
 
+**[⬆ Back to Index](#index)**
+
+
 
 ## **Features**
 
@@ -1360,12 +1374,12 @@ private func respondToSwipeGesture(gesture: UIGestureRecognizer) {
 
 ```
 
+**[⬆ Back to Index](#index)**
+
 
 
 ## **Design Patterns**
 [Book Design Patterns](https://en.wikipedia.org/wiki/Design_Patterns)
-
-
 
 ### [Factory Method](https://github.com/lgreydev/Help/blob/master/Help/DesignPatterns/FactoryMethod.swift)
 [Factory Method RU](https://refactoring.guru/ru/design-patterns/factory-method)
@@ -1450,11 +1464,11 @@ class SomeViewController: UIViewController {
 
 ```
 
+**[⬆ Back to Index](#index)**
+
 
 
 ## **Leet Code**
-
-
 
 ### [Pascal Triangle](https://github.com/lgreydev/Help/blob/master/Help/LeetCode/Pascal'sTriangle.swift)
  
