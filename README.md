@@ -50,6 +50,7 @@ In this project, I have collected various best practices and iOS development tip
     - [Destination](#destination)
     - [Pass Data Delegate](#pass-data-delegate)
     - [Pass Data Closure](#pass-data-closure)
+    - [AutoLayout Constraints Programmatically](#autolayout-constraints-programmatically)
     
     
 - [**Features**](#features)
@@ -1222,6 +1223,62 @@ class SecondViewController: UIViewController {
     @IBAction func actionButton(_ sender: UIButton) {
         closure?("I can pass data by closure")
         dismiss(animated: true, completion: nil)
+    }
+}
+
+```
+
+
+
+### [AutoLayout Constraints Programmatically](https://github.com/lgreydev/Help/blob/master/Help/UIKit/AutoLayoutConstraintsProgrammatically.swift)
+
+```swift
+
+class AutoLayoutConstraintsProgrammatically: UIViewController {
+
+    private let blueView: UIView = {
+        let view = UIView()
+        view.translatesAutoresizingMaskIntoConstraints = false
+        view.backgroundColor = .link
+        return view
+    }()
+
+    private let redView: UIView = {
+        let view = UIView()
+        view.translatesAutoresizingMaskIntoConstraints = false
+        view.backgroundColor = .red
+        return view
+    }()
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+
+        addConstraints()
+    }
+}
+
+extension AutoLayoutConstraintsProgrammatically {
+
+    private func addConstraints() {
+        var constraints = [NSLayoutConstraint]()
+
+        view.addSubview(blueView)
+        constraints.append(blueView.leadingAnchor.constraint(equalTo: view.leadingAnchor))
+        constraints.append(blueView.trailingAnchor.constraint(equalTo: view.trailingAnchor))
+        constraints.append(blueView.topAnchor.constraint(equalTo: view.topAnchor))
+        constraints.append(blueView.bottomAnchor.constraint(equalTo: view.bottomAnchor))
+
+        view.addSubview(redView)
+
+        // Width and height
+        constraints.append(redView.heightAnchor.constraint(equalTo: view.heightAnchor, multiplier: 0.5))
+        constraints.append(redView.widthAnchor.constraint(equalTo: view.widthAnchor, multiplier: 0.5))
+
+        // Center
+        constraints.append(redView.centerXAnchor.constraint(equalTo: view.centerXAnchor))
+        constraints.append(redView.centerYAnchor.constraint(equalTo: view.centerYAnchor))
+
+        NSLayoutConstraint.activate(constraints)
     }
 }
 
